@@ -1,1071 +1,891 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Thiên long bát bộ</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"
-        href="css/bootstrap.min.css">
-  <link rel="stylesheet"
-        href="./css/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="./js/index.js"></script>
 </head>
-
 <body>
-  <div class=" header navbar-expand d-flex">
-    <div class="header-logo">
-      <img src="img/logo.png" />
+<div class=" header navbar-expand d-flex">
+  <div class="header-logo">
+    <img src="https://tlm.wan.com/gw/images/logo.png"/>
+  </div>
+  <div class="header__menu d-flex w-100">
+    <div class="header__menu__item header__menu__item--active text-uppercase">
+      Trang chủ
     </div>
-    <div class="header__menu d-flex w-100">
-      <div class="header__menu__item header__menu__item--active text-uppercase">
-        Trang chủ
+    <div class="header__menu__item text-uppercase">
+      Tin tức
+      <div class="header__submenu">
+        <ul class="p-0">
+          <li>Tin Tức</li>
+          <li>Thông báo</li>
+          <li>Hoạt động</li>
+        </ul>
       </div>
-      <div class="header__menu__item text-uppercase">
-        Tin tức
-        <div class="header__submenu">
-          <ul class="p-0">
-            <li>Tin Tức</li>
-            <li>Thông báo</li>
-            <li>Hoạt động</li>
-          </ul>
-        </div>
-      </div>
-      <div class="header__menu__item text-uppercase">
-        Hướng dẫn
-      </div>
-      <div class="header__menu__item text-uppercase">
-        Dữ liệu
-      </div>
-      <div class="header__menu__item text-uppercase">
-        Quà tặng
-      </div>
+    </div>
+    <div class="header__menu__item text-uppercase">
+      Hướng dẫn
+    </div>
+    <div class="header__menu__item text-uppercase">
+      Dữ liệu
+    </div>
+    <div class="header__menu__item text-uppercase">
+      Quà tặng
     </div>
   </div>
-  <div class="home-container">
-    <div class="download__section">
-      <img src="img/img-down-copy.png">
+</div>
+<div class="home-container">
+  <div class="download__section">
+    <img src="img/img-down-copy.png">
+  </div>
+  <div class="part1">
+    <span class="hidden">hi</span>
+    <div class="d-flex header-menu">
+      <div class="header-menu__item">Đăng kí nhanh</div>
+      <div class="header-menu__item">Nạp thẻ</div>
+      <div class="header-menu__item">Quản lí tài khoản</div>
     </div>
-    <div class="part1">
-      <span class="hidden">hi</span>
-    </div>
-    <div class="part2">
-      <h2 class="title"></h2>
-      <div class="panel2">
-        <div class="menu-wrapper">
-          <ul class="newsMenu">
-            <li class="tablinks active"
-                onclick="openMenuPart2(event,'capnhat')">Cập nhật</li>
-            <li class="tablinks"
-                onclick="openMenuPart2(event, 'tintuc')">Tin tức</li>
-            <li class="tablinks"
-                onclick="openMenuPart2(event, 'thongbao')">Thông báo</li>
-            <li class="tablinks"
-                onclick="openMenuPart2(event, 'bantinmoi')">Bản tin mới</li>
-          </ul>
+  </div>
+  <div class="partSlide">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://www.pcinvasion.com/wp-content/uploads/2020/09/Hello-Games-is-already-working-on-its-next-huge-ambitious-game-800x400.jpg" alt="First slide">
         </div>
-        <div id="capnhat"
-             class="list-content">
-          <ul>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-          </ul>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://cdn.tgdd.vn//GameApp/1316588//llllllll-800x400.jpg" alt="Second slide">
         </div>
-        <div id="tintuc"
-             class="list-content d__none">
-          <ul>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Đại hội võ lâm - Công thành chiến </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Xuất hiện minh chủ võ lâm </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Sự kiện vân tiêu </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Sự kiện chiến trận Đa Bang </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="thongbao"
-             class="list-content d__none">
-          <ul>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="bantinmoi"
-             class="list-content d__none">
-          <ul>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Bản tin mới </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Bản tin mới </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Bản tin mới </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Bản tin mới </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-          </ul>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://www.sportsbettingnews.today/wp-content/uploads/2021/01/Epic-Games-Store-Reveals-Final-Free-Holiday-Game-800x400.jpg" alt="Third slide">
         </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
     </div>
-    <div class="part3">
-      <div class="part3__top-menu">
-        <div class="d-flex">
-          <div class="part3Menu menu menu1 active"
-               onclick="openMenuPart3(event, 'menpai')">Bang Phái</div>
-          <div class=" part3Menu menu menu2"
-               onclick="openMenuPart3(event, 'wanfa')">Cách chơi</div>
-          <div class="part3Menu menu menu3"
-               onclick="openMenuPart3(event, 'xinshou')">Tân Thủ</div>
-          <div class="part3Menu menu menu4"
-               onclick="openMenuPart3(event, 'gaoshou')">Nâng cao</div>
-        </div>
-        <div class="line"></div>
+  </div>
+  <div class="part3">
+    <div class="part3__top-menu">
+      <div class="d-flex">
+        <div class="part3Menu menu menu1 active" onclick="openMenuPart3(event, 'menpai')">Bang Phái</div>
+        <div class=" part3Menu menu menu2" onclick="openMenuPart3(event, 'wanfa')">Cách chơi</div>
+        <div class="part3Menu menu menu3" onclick="openMenuPart3(event, 'xinshou')">Tân Thủ</div>
+        <div class="part3Menu menu menu4" onclick="openMenuPart3(event, 'gaoshou')">Nâng cao</div>
       </div>
-      <div id="menpai"
-           class="content menpai">
-        <ul class="leftMenu">
-          <li class="menpai-item menpai1 active"
-              onclick="openMenuPart3BangPhai(event, 'menpai1Tab')"></li>
-          <li class="menpai-item menpai2"
-              onclick="openMenuPart3BangPhai(event, 'menpai2Tab')"></li>
-          <li class="menpai-item menpai3"
-              onclick="openMenuPart3BangPhai(event, 'menpai3Tab')"></li>
-          <li class="menpai-item menpai4"
-              onclick="openMenuPart3BangPhai(event, 'menpai4Tab')"></li>
-          <li class="menpai-item menpai5"
-              onclick="openMenuPart3BangPhai(event, 'menpai5Tab')"></li>
-        </ul>
-        <div class="tab">
-          <div id="menpai1Tab"
-               class="menpai1Tab tabContent">
-            <h3>Nga Mi </h3>
-            <div class="intro">
-              <span class="subTitle1">Tiểu sử :</span>
-              <p class="describe">Ai cũng biết Quán Thế Âm từ bi, nhưng lại không biết rằng Bồ tát có thể xuyên thế gian
-                nhưng không thể vượt qua chính mình, cũng như ánh đèn Phật vàng soi sáng núi Nga Mi cũng không xua tan
-                được khói mù của hỗn loạn. thế giới. Cho dù hắn có khả năng trở về từ cõi chết, cũng không đủ để người
-                ta
-                hận, yêu vướng bận. Một bên là vinh hoa phú quý, một bên là tình thân gia đình nương tựa lẫn nhau. Làm
-                thế
-                nào để quyết định có nên chiến đấu hay không chiến đấu?</p>
-              <span class="subTitle2">Sở trường:</span>
-              <p class="tz">Chiến đấu từ xa </p>
-            </div>
-            <a class="mpMore">Chi tiết</a>
-            <img class="skill"
-                 src="./img/emSkill.png">
-            <img class="person"
-                 src="./img/emPerson.png">
+      <div class="line"></div>
+    </div>
+    <div id="menpai" class="content menpai">
+      <ul class="leftMenu">
+        <li class="menpai-item menpai1 active" onclick="openMenuPart3BangPhai(event, 'menpai1Tab')"></li>
+        <li class="menpai-item menpai2" onclick="openMenuPart3BangPhai(event, 'menpai2Tab')"></li>
+        <li class="menpai-item menpai3" onclick="openMenuPart3BangPhai(event, 'menpai3Tab')"></li>
+        <li class="menpai-item menpai4" onclick="openMenuPart3BangPhai(event, 'menpai4Tab')"></li>
+        <li class="menpai-item menpai5" onclick="openMenuPart3BangPhai(event, 'menpai5Tab')"></li>
+      </ul>
+      <div class="tab">
+        <div id="menpai1Tab" class="menpai1Tab tabContent">
+          <h3>Nga Mi </h3>
+          <div class="intro">
+            <span class="subTitle1">Tiểu sử :</span>
+            <p class="describe">Ai cũng biết Quán Thế Âm từ bi, nhưng lại không biết rằng Bồ tát có thể xuyên thế gian
+              nhưng không thể vượt qua chính mình, cũng như ánh đèn Phật vàng soi sáng núi Nga Mi cũng không xua tan
+              được khói mù của hỗn loạn. thế giới. Cho dù hắn có khả năng trở về từ cõi chết, cũng không đủ để người ta
+              hận, yêu vướng bận. Một bên là vinh hoa phú quý, một bên là tình thân gia đình nương tựa lẫn nhau. Làm thế
+              nào để quyết định có nên chiến đấu hay không chiến đấu?</p>
+            <span class="subTitle2">Sở trường:</span>
+            <p class="tz">Chiến đấu từ xa </p>
           </div>
-          <div id="menpai2Tab"
-               class="menpai2Tab tabContent d__none">
-            <h3>Cái Bang</h3>
-            <div class="intro">
-              <span class="subTitle1">Tiểu sử :</span>
-              <p class="describe">Vào thời Bắc Tống, băng đảng võ lâm đầu tiên ở đồng bằng Trung Tâm, băng nhóm ăn mày
-                chia bánh lái khắp đất nước, hàng trăm nghìn đệ tử dưới trướng. Các anh hùng của đồng bằng Trung Bộ chỉ
-                biết nhìn vào thủ lĩnh của băng đảng ăn xin. Đó là kiểu cảnh gì vậy? Ai có thể ngờ rằng một âm mưu 30
-                năm
-                trước đã tiêu diệt không chỉ Qiao Feng, mà còn cả băng đảng ăn mày ngày nay. Bai Shijing, đó chỉ là một
-                nhân vật phản diện, Zhuang Juxian, chỉ là một con rối. Trước tình hình danh tiếng của băng nhóm ngày
-                càng
-                giảm sút và võ lâm Đồng bằng Trung tâm bị tàn phá, băng nhóm đầu tiên trên thế giới sẽ làm thế nào để
-                tái
-                hiện lại ánh hào quang trước đây?
-              </p>
-              <span class="subTitle2">Sở trường :</span>
-              <p class="tz">Cận chiến </p>
-            </div>
-            <a class="mpMore">Chi tiết</a>
-            <img class="skill"
-                 src="./img/gbSkill.png">
-            <img class="person"
-                 src="./img/gbPerson.png">
+          <a class="mpMore">Chi tiết</a>
+          <img class="skill" src="./img/emSkill.png">
+          <img class="person" src="./img/emPerson.png">
+        </div>
+        <div id="menpai2Tab" class="menpai2Tab tabContent d__none">
+          <h3>Cái Bang</h3>
+          <div class="intro">
+            <span class="subTitle1">Tiểu sử :</span>
+            <p class="describe">Vào thời Bắc Tống, băng đảng võ lâm đầu tiên ở đồng bằng Trung Tâm, băng nhóm ăn mày
+              chia bánh lái khắp đất nước, hàng trăm nghìn đệ tử dưới trướng. Các anh hùng của đồng bằng Trung Bộ chỉ
+              biết nhìn vào thủ lĩnh của băng đảng ăn xin. Đó là kiểu cảnh gì vậy? Ai có thể ngờ rằng một âm mưu 30 năm
+              trước đã tiêu diệt không chỉ Qiao Feng, mà còn cả băng đảng ăn mày ngày nay. Bai Shijing, đó chỉ là một
+              nhân vật phản diện, Zhuang Juxian, chỉ là một con rối. Trước tình hình danh tiếng của băng nhóm ngày càng
+              giảm sút và võ lâm Đồng bằng Trung tâm bị tàn phá, băng nhóm đầu tiên trên thế giới sẽ làm thế nào để tái
+              hiện lại ánh hào quang trước đây?
+            </p>
+            <span class="subTitle2">Sở trường :</span>
+            <p class="tz">Cận chiến </p>
+          </div>
+          <a class="mpMore">Chi tiết</a>
+          <img class="skill" src="./img/gbSkill.png">
+          <img class="person" src="./img/gbPerson.png">
 
-          </div>
-          <div id="menpai3Tab"
-               class="menpai3Tab tabContent d__none">
-            <h3>Thiên Sơn</h3>
-            <div class="intro">
-              <span class="subTitle1">Tiểu sử :</span>
-              <p class="describe">Mọi người ca ngợi người đứng đầu hiện tại của núi Thiên Sơn, Xuzhu, vì lòng từ bi của
-                ông, nhưng họ thường quên quá khứ của Cung điện Lingjiu. Ngày nay họ vẫn là chủ nhân của Ba mươi sáu
-                động
-                và Bảy mươi hai đảo. Trên tay họ vẫn nắm trong tay lá bùa sinh tử mà ai nghe cũng biết. Đằng sau họ là
-                thế
-                lực của toàn bộ Vương triều Xixia, Tongma không còn nữa, nhưng Thiên Sơn lại có một truyền thuyết mới.
-              </p>
-              <span class="subTitle2">Sở trường :</span>
-              <p class="tz">Sát thủ</p>
-            </div>
-            <a class="mpMore">Chi tiết</a>
-            <img class="skill"
-                 src="./img/tsSkill.png">
-            <img class="person"
-                 src="./img/tsPerson.png">
-          </div>
-          <div id="menpai4Tab"
-               class="menpai4Tab tabContent d__none">
-            <h3>Tiêu Dao</h3>
-            <div class="intro">
-              <span class="subTitle1">Tiểu sử :</span>
-              <p class="describe">Thế giới không nhân từ, và mọi thứ đều là một con chó. Hong Chen hạnh phúc, cuộc đời
-                ngắn ngủi, chẳng lẽ suốt đời vướng bận bởi những chuyện trần tục sao? Vì vậy, có việc ông Congbian không
-                yêu cầu các vấn đề thế giới, và sự hấp tấp của tám người bạn của Hangu. Tuy nhiên, thời gian đã thay đổi
-                và thế giới cũng thay đổi, trong thời buổi khó khăn, có mấy ai có thể thực sự tự do và dễ dàng? Động
-                Lingbo dưới lũy tre kỳ ảo không còn là thiên đường của quá khứ.
-              </p>
-              <span class="subTitle2">Sở trường :</span>
-              <p class="tz">Từ xa</p>
-            </div>
-            <a class="mpMore">Chi tiết</a>
-            <img class="skill"
-                 src="./img/xySkill.png">
-            <img class="person"
-                 src="./img/xyPerson.png">
-          </div>
-          <div id="menpai5Tab"
-               class="menpai5Tab tabContent d__none">
-            <h3>Thiên Long</h3>
-            <div class="intro">
-              <span class="subTitle1">Tiểu sử :</span>
-              <p class="describe">Tuyết phủ trên núi Cangshan, Jiaojiao Erhai và mặt trăng. Đã quá lâu cho một góc bình
-                yên, và dường như nó đã phải như vậy từ rất lâu rồi. Tuy nhiên, kỵ binh sắt của quân đội Liao, hàng ngàn
-                dặm, sắp sửa vượt qua thời nhà Tống. Môi chết và răng lạnh. Hành trình tiến lên phía bắc để viện trợ cho
-                nhà Tống đã diễn ra không hề chậm trễ. Để mọi người trong thiên hạ thấy rằng các đệ tử của Thiên Long
-                vương quốc Nam Chiếu cũng là những kẻ có máu mặt, có trách nhiệm!
-              </p>
-              <span class="subTitle2">Sở trường :</span>
-              <p class="tz">Từ xa</p>
-            </div>
-            <a class="mpMore">Chi tiết</a>
-            <img class="skill"
-                 src="./img/tlSkill.png">
-            <img class="person"
-                 src="./img/tlPerson.png">
-          </div>
         </div>
-      </div>
-      <div id="wanfa"
-           class="content wanfa d__none">
-        <ul class="wanfa1">
-          <li>
-            <img src="./img/dywf.png"
-                 alt="Các trò chơi đa dạng"
-                 onclick="closeAllMenuWanfaPart3()">
-          </li>
-          <li class="wanfa11">
-            <img src="./img/rchd.png"
-                 onclick="openMenuWanfaPart3('wanfa11')">
-            <div id="wanfa11"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Tên trộm BMW</span>
-                  </a>
-                  <a href="#">
-                    <p>Nhiều kinh nghiệm và phần thưởng vật phẩm, bạn đã sẵn sàng chưa, chàng trai
-                      trẻ?</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Nhiệm vụ hằng ngày</span>
-                  </a>
-                  <a href="#">
-                    <p>Các hoạt động chơi trò chơi hàng ngày, phân tích gian lận trong trò chơi</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Khám nghiệm Hoàng Gia</span>
-                  </a>
-                  <a href="#">
-                    <p>Giảng dạy Kỳ thi Hoàng gia</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Thử nghiệm các anh hùng</span>
-                  </a>
-                  <a href="#">
-                    <p>Gameplay mới và kỹ năng làm thủ tục hải quan trong sự kiện thử nghiệm anh
-                      hùng</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-          <li class="wanfa12">
-            <img src="./img/xshd.png"
-                 onclick="openMenuWanfaPart3('wanfa12')">
-            <div id="wanfa12"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Jinghu Bandit</span>
-                  </a>
-                  <a href="#">
-                    <p>Băng cướp đang tràn lan ở Jinghu, các anh hùng nhỏ tuổi phải nhớ đi theo đội</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Giải đấu Huashan</span>
-                  </a>
-                  <a href="#">
-                    <p>Giới thiệu và phân tích sự kiện khó khăn trong thời gian giới hạn Huashan
-                      Lunjian</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Quét Nhà trưng bày Hoa mẫu đơn</span>
-                  </a>
-                  <a>
-                    <p>Phần thưởng xa xỉ cho các sự kiện cấp độ giới hạn mỗi tuần một lần</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Trò chơi cờ Zhenlong</span>
-                  </a>
-                  <a>
-                    <p>Qinqi, thư pháp, hội họa và cờ vua đã thiết lập thế giới</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-          <li class="wanfa13">
-            <img src="./img/fbwf.png"
-                 onclick="openMenuWanfaPart3('wanfa13')">
-            <div id="wanfa13"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Chiến tranh Tống Liêu</span>
-                  </a>
-                  <a href="#">
-                    <p>Một số điều quan trọng mà chúng ta phải chú ý khi lập đội để tham gia vào cuộc chiến
-                      Tống-Liêu</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Sijuezhuang</span>
-                  </a>
-                  <a href="#">
-                    <p>Các kỹ năng của ngục tối khó khăn cao Sijuezhuang để chống lại ba đại lý lớn</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Yanziwu</span>
-                  </a>
-                  <a href="#">
-                    <p>Lập nhóm để chơi phần giới thiệu ba chiếc nhẫn của Pharaoh và các biện pháp phòng
-                      ngừa để nhận phần thưởng cao hơn</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Chiếc nhẫn thứ ba cũ</span>
-                  </a>
-                  <a href="#">
-                    <p>Hướng dẫn kỹ năng phá chiếc nhẫn thứ ba trong ngục tối cũ</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-          <li class="wanfa14">
-            <img src="./img/jhzl.png"
-                 onclick="openMenuWanfaPart3('wanfa14')">
-            <div id="wanfa14"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Đi du lịch thế giới</span>
-                  </a>
-                  <a href="#">
-                    <p>Đường đến sông hồ tham quan thế giới bao gồm các nhiệm vụ và phần thưởng</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Hiệp sỹ</span>
-                  </a>
-                  <a href="#">
-                    <p>Phần thưởng và tài liệu trò chơi</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Để nó đi</span>
-                  </a>
-                  <a href="#">
-                    <p>Jianghu Road Ren Xiaoyao giới thiệu nội dung và giới thiệu phần thưởng tích lũy mức
-                      độ hoàn thành</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Wu Lin Zun</span>
-                  </a>
-                  <a href="#">
-                    <p>Phần thưởng siêu việt của Wu Lin Zun ở Jianghu Road và sự giúp đỡ để nâng cao sức
-                      chiến đấu</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-        </ul>
-        <ul class="wanfa2">
-          <li>
-            <img src="./img/dywf.png"
-                 alt="Các trò chơi đa dạng"
-                 onclick="closeAllMenuWanfaPart3()">
-          </li>
-          <li class="wanfa21">
-            <img src="./img/rchd.png"
-                 onclick="openMenuWanfaPart3('wanfa21')">
-            <div id="wanfa21"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Tên trộm BMW</span>
-                  </a>
-                  <a href="#">
-                    <p>Nhiều kinh nghiệm và phần thưởng vật phẩm, bạn đã sẵn sàng chưa, chàng trai
-                      trẻ?</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Nhiệm vụ hằng ngày</span>
-                  </a>
-                  <a href="#">
-                    <p>Các hoạt động chơi trò chơi hàng ngày, phân tích gian lận trong trò chơi</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Khám nghiệm Hoàng Gia</span>
-                  </a>
-                  <a href="#">
-                    <p>Giảng dạy Kỳ thi Hoàng gia</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Thử nghiệm các anh hùng</span>
-                  </a>
-                  <a href="#">
-                    <p>Gameplay mới và kỹ năng làm thủ tục hải quan trong sự kiện thử nghiệm anh
-                      hùng</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-          <li class="wanfa22">
-            <img src="./img/xshd.png"
-                 onclick="openMenuWanfaPart3('wanfa22')">
-            <div id="wanfa22"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Jinghu Bandit</span>
-                  </a>
-                  <a href="#">
-                    <p>Băng cướp đang tràn lan ở Jinghu, các anh hùng nhỏ tuổi phải nhớ đi theo đội</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Giải đấu Huashan</span>
-                  </a>
-                  <a href="#">
-                    <p>Giới thiệu và phân tích sự kiện khó khăn trong thời gian giới hạn Huashan
-                      Lunjian</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Quét Nhà trưng bày Hoa mẫu đơn</span>
-                  </a>
-                  <a>
-                    <p>Phần thưởng xa xỉ cho các sự kiện cấp độ giới hạn mỗi tuần một lần</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Trò chơi cờ Zhenlong</span>
-                  </a>
-                  <a>
-                    <p>Qinqi, thư pháp, hội họa và cờ vua đã thiết lập thế giới</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-          <li class="wanfa23">
-            <img src="./img/fbwf.png"
-                 onclick="openMenuWanfaPart3('wanfa23')">
-            <div id="wanfa23"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Chiến tranh Tống Liêu</span>
-                  </a>
-                  <a href="#">
-                    <p>Một số điều quan trọng mà chúng ta phải chú ý khi lập đội để tham gia vào cuộc chiến
-                      Tống-Liêu</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Sijuezhuang</span>
-                  </a>
-                  <a href="#">
-                    <p>Các kỹ năng của ngục tối khó khăn cao Sijuezhuang để chống lại ba đại lý lớn</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Yanziwu</span>
-                  </a>
-                  <a href="#">
-                    <p>Lập nhóm để chơi phần giới thiệu ba chiếc nhẫn của Pharaoh và các biện pháp phòng
-                      ngừa để nhận phần thưởng cao hơn</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Chiếc nhẫn thứ ba cũ</span>
-                  </a>
-                  <a href="#">
-                    <p>Hướng dẫn kỹ năng phá chiếc nhẫn thứ ba trong ngục tối cũ</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-          <li class="wanfa24">
-            <img src="./img/jhzl.png"
-                 onclick="openMenuWanfaPart3('wanfa24')">
-            <div id="wanfa24"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Đi du lịch thế giới</span>
-                  </a>
-                  <a href="#">
-                    <p>Đường đến sông hồ tham quan thế giới bao gồm các nhiệm vụ và phần thưởng</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Hiệp sỹ</span>
-                  </a>
-                  <a href="#">
-                    <p>Phần thưởng và tài liệu trò chơi</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Để nó đi</span>
-                  </a>
-                  <a href="#">
-                    <p>Jianghu Road Ren Xiaoyao giới thiệu nội dung và giới thiệu phần thưởng tích lũy mức
-                      độ hoàn thành</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Wu Lin Zun</span>
-                  </a>
-                  <a href="#">
-                    <p>Phần thưởng siêu việt của Wu Lin Zun ở Jianghu Road và sự giúp đỡ để nâng cao sức
-                      chiến đấu</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-        </ul>
-        <ul class="wanfa3">
-          <li>
-            <img src="./img/dywf.png"
-                 alt="Các trò chơi đa dạng"
-                 onclick="closeAllMenuWanfaPart3()">
-          </li>
-          <li class="wanfa31">
-            <img src="./img/rchd.png"
-                 onclick="openMenuWanfaPart3('wanfa31')">
-            <div id="wanfa31"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Tên trộm BMW</span>
-                  </a>
-                  <a href="#">
-                    <p>Nhiều kinh nghiệm và phần thưởng vật phẩm, bạn đã sẵn sàng chưa, chàng trai
-                      trẻ?</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Nhiệm vụ hằng ngày</span>
-                  </a>
-                  <a href="#">
-                    <p>Các hoạt động chơi trò chơi hàng ngày, phân tích gian lận trong trò chơi</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Khám nghiệm Hoàng Gia</span>
-                  </a>
-                  <a href="#">
-                    <p>Giảng dạy Kỳ thi Hoàng gia</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Thử nghiệm các anh hùng</span>
-                  </a>
-                  <a href="#">
-                    <p>Gameplay mới và kỹ năng làm thủ tục hải quan trong sự kiện thử nghiệm anh
-                      hùng</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-          <li class="wanfa32">
-            <img src="./img/xshd.png"
-                 onclick="openMenuWanfaPart3('wanfa32')">
-            <div id="wanfa32"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Jinghu Bandit</span>
-                  </a>
-                  <a href="#">
-                    <p>Băng cướp đang tràn lan ở Jinghu, các anh hùng nhỏ tuổi phải nhớ đi theo đội</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Giải đấu Huashan</span>
-                  </a>
-                  <a href="#">
-                    <p>Giới thiệu và phân tích sự kiện khó khăn trong thời gian giới hạn Huashan
-                      Lunjian</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Quét Nhà trưng bày Hoa mẫu đơn</span>
-                  </a>
-                  <a>
-                    <p>Phần thưởng xa xỉ cho các sự kiện cấp độ giới hạn mỗi tuần một lần</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Trò chơi cờ Zhenlong</span>
-                  </a>
-                  <a>
-                    <p>Qinqi, thư pháp, hội họa và cờ vua đã thiết lập thế giới</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-          <li class="wanfa33">
-            <img src="./img/fbwf.png"
-                 onclick="openMenuWanfaPart3('wanfa33')">
-            <div id="wanfa33"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Chiến tranh Tống Liêu</span>
-                  </a>
-                  <a href="#">
-                    <p>Một số điều quan trọng mà chúng ta phải chú ý khi lập đội để tham gia vào cuộc chiến
-                      Tống-Liêu</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Sijuezhuang</span>
-                  </a>
-                  <a href="#">
-                    <p>Các kỹ năng của ngục tối khó khăn cao Sijuezhuang để chống lại ba đại lý lớn</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Yanziwu</span>
-                  </a>
-                  <a href="#">
-                    <p>Lập nhóm để chơi phần giới thiệu ba chiếc nhẫn của Pharaoh và các biện pháp phòng
-                      ngừa để nhận phần thưởng cao hơn</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Chiếc nhẫn thứ ba cũ</span>
-                  </a>
-                  <a href="#">
-                    <p>Hướng dẫn kỹ năng phá chiếc nhẫn thứ ba trong ngục tối cũ</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-          <li class="wanfa34">
-            <img src="./img/jhzl.png"
-                 onclick="openMenuWanfaPart3('wanfa34')">
-            <div id="wanfa34"
-                 class="wfText d__none">
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Đi du lịch thế giới</span>
-                  </a>
-                  <a href="#">
-                    <p>Đường đến sông hồ tham quan thế giới bao gồm các nhiệm vụ và phần thưởng</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Hiệp sỹ</span>
-                  </a>
-                  <a href="#">
-                    <p>Phần thưởng và tài liệu trò chơi</p>
-                  </a>
-                </div>
-              </div>
-              <div class="d-grid grid-content">
-                <div class="block">
-                  <a href="#">
-                    <span>Để nó đi</span>
-                  </a>
-                  <a href="#">
-                    <p>Jianghu Road Ren Xiaoyao giới thiệu nội dung và giới thiệu phần thưởng tích lũy mức
-                      độ hoàn thành</p>
-                  </a>
-                </div>
-                <div class="block">
-                  <a href="#">
-                    <span>Wu Lin Zun</span>
-                  </a>
-                  <a href="#">
-                    <p>Phần thưởng siêu việt của Wu Lin Zun ở Jianghu Road và sự giúp đỡ để nâng cao sức
-                      chiến đấu</p>
-                  </a>
-                </div>
-              </div>
-              <a class="ckgd">Xem them</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div id="xinshou"
-           class="content xinshou d__none">
-        <a href="#">
-          <img src="./img/sqgl.png"
-               alt="Chiến lược tiết kiệm tiền ">
-        </a>
-        <a href="#">
-          <img src="./img/sjgl.png"
-               alt="Nâng cấp chiến lược">
-        </a>
-        <a href="#">
-          <img src="./img/qwwf.png"
-               alt="Trò chơi thú vị">
-        </a>
-      </div>
-      <div id="gaoshou"
-           class="content gaoshou d__none">
-        <a href="#">
-          <img src="./img/zlts.png"
-               alt="Tăng sức mạnh chiến đấu">
-        </a>
-        <a href="#">
-          <img src="./img/mcyc.png"
-               alt="Phát triển vật nuôi dễ thương">
-        </a>
-        <a href="#">
-          <img src="./img/zbts.png"
-               alt="Nâng cấp thiết bị">
-        </a>
-        <a href="#">
-          <img src="./img/jnzd.png"
-               alt="Kỹ năng chỉ">
-        </a>
-      </div>
-    </div>
-    <div class="part4">
-      <div class="panel4">
-        <div class="dataMenu">
-          <ul>
-            <li class="current">Video</li>
-            <li>Hình ảnh</li>
-          </ul>
-        </div>
-        <div class="dataContent">
-          <div class="content4 list">
-            <div class="v">
-              <a>
-                <img src="http://cdn-zfx-xjp.wan.com/tl/news/977d90925bfc4d698cd0df3c02df70e6.jpg"
-                     alt="Hình thu nhỏ video">
-              </a>
-              <a href="2417.html">
-                <p class="title">Tóm lược</p>
-              </a>
-              <p class="date">Thời gian phát hành: 2018-07-04</p>
-            </div>
-            <div class="v">
-              <a>
-                <img src="./img/anh-ngami.jpg"
-                     alt="Hình thu nhỏ video">
-              </a>
-              <a href="2417.html">
-                <p class="title">Giới thiệu phái Nga Mi</p>
-              </a>
-              <p class="date">Thời gian phát hành: 2018-07-04</p>
-            </div>
-            <div class="v">
-              <a>
-                <img src="http://cdn-zfx-xjp.wan.com/tl/news/977d90925bfc4d698cd0df3c02df70e6.jpg"
-                     alt="Hình thu nhỏ video">
-              </a>
-              <a href="2417.html">
-                <p class="title">Tóm lược</p>
-              </a>
-              <p class="date">Thời gian phát hành: 2018-07-04</p>
-            </div>
-            <div class="v">
-              <a>
-                <img src="./img/anh-thienlong.jpg"
-                     alt="Hình thu nhỏ video">
-              </a>
-              <a href="2417.html">
-                <p class="title">Phái Thiên Long</p>
-              </a>
-              <p class="date">Thời gian phát hành: 2018-07-04</p>
-            </div>
-            <div class="v">
-              <a>
-                <img src="http://cdn-zfx-xjp.wan.com/tl/news/977d90925bfc4d698cd0df3c02df70e6.jpg"
-                     alt="Hình thu nhỏ video">
-              </a>
-              <a href="2417.html">
-                <p class="title">Tóm lược</p>
-              </a>
-              <p class="date">Thời gian phát hành: 2018-07-04</p>
-            </div>
-            <div class="v">
-              <a>
-                <img src="http://cdn-zfx-xjp.wan.com/tl/news/977d90925bfc4d698cd0df3c02df70e6.jpg"
-                     alt="Hình thu nhỏ video">
-              </a>
-              <a href="2417.html">
-                <p class="title">Tóm lược</p>
-              </a>
-              <p class="date">Thời gian phát hành: 2018-07-04</p>
-            </div>
-            <div class="v">
-              <a>
-                <img src="./img/anh-pet.jpg"
-                     alt="Hình thu nhỏ video">
-              </a>
-              <a href="2417.html">
-                <p class="title">Làm sao nâng cấp linh thú</p>
-              </a>
-              <p class="date">Thời gian phát hành: 2018-07-04</p>
-            </div>
-            <div class="v">
-              <a>
-                <img src="http://cdn-zfx-xjp.wan.com/tl/news/977d90925bfc4d698cd0df3c02df70e6.jpg"
-                     alt="Hình thu nhỏ video">
-              </a>
-              <a href="2417.html">
-                <p class="title">Tóm lược</p>
-              </a>
-              <p class="date">Thời gian phát hành: 2018-07-04</p>
-            </div>
-            <a href="#"
-               class="more">Xem thêm</a>
+        <div id="menpai3Tab" class="menpai3Tab tabContent d__none">
+          <h3>Thiên Sơn</h3>
+          <div class="intro">
+            <span class="subTitle1">Tiểu sử :</span>
+            <p class="describe">Mọi người ca ngợi người đứng đầu hiện tại của núi Thiên Sơn, Xuzhu, vì lòng từ bi của
+              ông, nhưng họ thường quên quá khứ của Cung điện Lingjiu. Ngày nay họ vẫn là chủ nhân của Ba mươi sáu động
+              và Bảy mươi hai đảo. Trên tay họ vẫn nắm trong tay lá bùa sinh tử mà ai nghe cũng biết. Đằng sau họ là thế
+              lực của toàn bộ Vương triều Xixia, Tongma không còn nữa, nhưng Thiên Sơn lại có một truyền thuyết mới.
+            </p>
+            <span class="subTitle2">Sở trường :</span>
+            <p class="tz">Sát thủ</p>
           </div>
+          <a class="mpMore">Chi tiết</a>
+          <img class="skill" src="./img/tsSkill.png">
+          <img class="person" src="./img/tsPerson.png">
+        </div>
+        <div id="menpai4Tab" class="menpai4Tab tabContent d__none">
+          <h3>Tiêu Dao</h3>
+          <div class="intro">
+            <span class="subTitle1">Tiểu sử :</span>
+            <p class="describe">Thế giới không nhân từ, và mọi thứ đều là một con chó. Hong Chen hạnh phúc, cuộc đời
+              ngắn ngủi, chẳng lẽ suốt đời vướng bận bởi những chuyện trần tục sao? Vì vậy, có việc ông Congbian không
+              yêu cầu các vấn đề thế giới, và sự hấp tấp của tám người bạn của Hangu. Tuy nhiên, thời gian đã thay đổi
+              và thế giới cũng thay đổi, trong thời buổi khó khăn, có mấy ai có thể thực sự tự do và dễ dàng? Động
+              Lingbo dưới lũy tre kỳ ảo không còn là thiên đường của quá khứ.
+            </p>
+            <span class="subTitle2">Sở trường :</span>
+            <p class="tz">Từ xa</p>
+          </div>
+          <a class="mpMore">Chi tiết</a>
+          <img class="skill" src="./img/xySkill.png">
+          <img class="person" src="./img/xyPerson.png">
+        </div>
+        <div id="menpai5Tab" class="menpai5Tab tabContent d__none">
+          <h3>Thiên Long</h3>
+          <div class="intro">
+            <span class="subTitle1">Tiểu sử :</span>
+            <p class="describe">Tuyết phủ trên núi Cangshan, Jiaojiao Erhai và mặt trăng. Đã quá lâu cho một góc bình
+              yên, và dường như nó đã phải như vậy từ rất lâu rồi. Tuy nhiên, kỵ binh sắt của quân đội Liao, hàng ngàn
+              dặm, sắp sửa vượt qua thời nhà Tống. Môi chết và răng lạnh. Hành trình tiến lên phía bắc để viện trợ cho
+              nhà Tống đã diễn ra không hề chậm trễ. Để mọi người trong thiên hạ thấy rằng các đệ tử của Thiên Long
+              vương quốc Nam Chiếu cũng là những kẻ có máu mặt, có trách nhiệm!
+            </p>
+            <span class="subTitle2">Sở trường :</span>
+            <p class="tz">Từ xa</p>
+          </div>
+          <a class="mpMore">Chi tiết</a>
+          <img class="skill" src="./img/tlSkill.png">
+          <img class="person" src="./img/tlPerson.png">
         </div>
       </div>
     </div>
-    <div class="bottomWrapper">
-      <div class="bottom">
-        <img class="icon"
-             src="images/icon.png"
-             alt="天龙手游icon图">
-        <table>
-          <tbody>
-            <tr>
-              <td>【Tên trò chơi】</td>
-              <td>Tân Thiên Long</td>
-            </tr>
-            <tr>
-              <td>【Nền tảng】</td>
-              <td>Android/ios</td>
-            </tr>
-            <tr>
-              <td>【Thể loại】</td>
-              <td>MMORPG</td>
-            </tr>
-            <tr>
-              <td>【Cơ chế】</td>
-              <td>Trò chơi di động</td>
-            </tr>
-            <tr>
-              <td>【Giờ mở cửa】</td>
-              <td>09/2021</td>
-            </tr>
-          </tbody>
-        </table>
+    <div id="wanfa" class="content wanfa d__none">
+      <ul class="wanfa1">
+        <li>
+          <img src="./img/dywf.png" alt="Các trò chơi đa dạng" onclick="closeAllMenuWanfaPart3()">
+        </li>
+        <li class="wanfa11">
+          <img src="./img/rchd.png" onclick="openMenuWanfaPart3('wanfa11')">
+          <div id="wanfa11" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Tên trộm BMW</span>
+                </a>
+                <a href="#">
+                  <p>Nhiều kinh nghiệm và phần thưởng vật phẩm, bạn đã sẵn sàng chưa, chàng trai
+                    trẻ?</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Nhiệm vụ hằng ngày</span>
+                </a>
+                <a href="#">
+                  <p>Các hoạt động chơi trò chơi hàng ngày, phân tích gian lận trong trò chơi</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Khám nghiệm Hoàng Gia</span>
+                </a>
+                <a href="#">
+                  <p>Giảng dạy Kỳ thi Hoàng gia</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Thử nghiệm các anh hùng</span>
+                </a>
+                <a href="#">
+                  <p>Gameplay mới và kỹ năng làm thủ tục hải quan trong sự kiện thử nghiệm anh
+                    hùng</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+        <li class="wanfa12">
+          <img src="./img/xshd.png" onclick="openMenuWanfaPart3('wanfa12')">
+          <div id="wanfa12" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Jinghu Bandit</span>
+                </a>
+                <a href="#">
+                  <p>Băng cướp đang tràn lan ở Jinghu, các anh hùng nhỏ tuổi phải nhớ đi theo đội</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Giải đấu Huashan</span>
+                </a>
+                <a href="#">
+                  <p>Giới thiệu và phân tích sự kiện khó khăn trong thời gian giới hạn Huashan
+                    Lunjian</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Quét Nhà trưng bày Hoa mẫu đơn</span>
+                </a>
+                <a>
+                  <p>Phần thưởng xa xỉ cho các sự kiện cấp độ giới hạn mỗi tuần một lần</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Trò chơi cờ Zhenlong</span>
+                </a>
+                <a>
+                  <p>Qinqi, thư pháp, hội họa và cờ vua đã thiết lập thế giới</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+        <li class="wanfa13">
+          <img src="./img/fbwf.png" onclick="openMenuWanfaPart3('wanfa13')">
+          <div id="wanfa13" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Chiến tranh Tống Liêu</span>
+                </a>
+                <a href="#">
+                  <p>Một số điều quan trọng mà chúng ta phải chú ý khi lập đội để tham gia vào cuộc chiến
+                    Tống-Liêu</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Sijuezhuang</span>
+                </a>
+                <a href="#">
+                  <p>Các kỹ năng của ngục tối khó khăn cao Sijuezhuang để chống lại ba đại lý lớn</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Yanziwu</span>
+                </a>
+                <a href="#">
+                  <p>Lập nhóm để chơi phần giới thiệu ba chiếc nhẫn của Pharaoh và các biện pháp phòng
+                    ngừa để nhận phần thưởng cao hơn</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Chiếc nhẫn thứ ba cũ</span>
+                </a>
+                <a href="#">
+                  <p>Hướng dẫn kỹ năng phá chiếc nhẫn thứ ba trong ngục tối cũ</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+        <li class="wanfa14">
+          <img src="./img/jhzl.png" onclick="openMenuWanfaPart3('wanfa14')">
+          <div id="wanfa14" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Đi du lịch thế giới</span>
+                </a>
+                <a href="#">
+                  <p>Đường đến sông hồ tham quan thế giới bao gồm các nhiệm vụ và phần thưởng</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Hiệp sỹ</span>
+                </a>
+                <a href="#">
+                  <p>Phần thưởng và tài liệu trò chơi</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Để nó đi</span>
+                </a>
+                <a href="#">
+                  <p>Jianghu Road Ren Xiaoyao giới thiệu nội dung và giới thiệu phần thưởng tích lũy mức
+                    độ hoàn thành</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Wu Lin Zun</span>
+                </a>
+                <a href="#">
+                  <p>Phần thưởng siêu việt của Wu Lin Zun ở Jianghu Road và sự giúp đỡ để nâng cao sức
+                    chiến đấu</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="wanfa2">
+        <li>
+          <img src="./img/dywf.png" alt="Các trò chơi đa dạng" onclick="closeAllMenuWanfaPart3()">
+        </li>
+        <li class="wanfa21">
+          <img src="./img/rchd.png" onclick="openMenuWanfaPart3('wanfa21')">
+          <div id="wanfa21" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Tên trộm BMW</span>
+                </a>
+                <a href="#">
+                  <p>Nhiều kinh nghiệm và phần thưởng vật phẩm, bạn đã sẵn sàng chưa, chàng trai
+                    trẻ?</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Nhiệm vụ hằng ngày</span>
+                </a>
+                <a href="#">
+                  <p>Các hoạt động chơi trò chơi hàng ngày, phân tích gian lận trong trò chơi</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Khám nghiệm Hoàng Gia</span>
+                </a>
+                <a href="#">
+                  <p>Giảng dạy Kỳ thi Hoàng gia</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Thử nghiệm các anh hùng</span>
+                </a>
+                <a href="#">
+                  <p>Gameplay mới và kỹ năng làm thủ tục hải quan trong sự kiện thử nghiệm anh
+                    hùng</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+        <li class="wanfa22">
+          <img src="./img/xshd.png" onclick="openMenuWanfaPart3('wanfa22')">
+          <div id="wanfa22" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Jinghu Bandit</span>
+                </a>
+                <a href="#">
+                  <p>Băng cướp đang tràn lan ở Jinghu, các anh hùng nhỏ tuổi phải nhớ đi theo đội</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Giải đấu Huashan</span>
+                </a>
+                <a href="#">
+                  <p>Giới thiệu và phân tích sự kiện khó khăn trong thời gian giới hạn Huashan
+                    Lunjian</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Quét Nhà trưng bày Hoa mẫu đơn</span>
+                </a>
+                <a>
+                  <p>Phần thưởng xa xỉ cho các sự kiện cấp độ giới hạn mỗi tuần một lần</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Trò chơi cờ Zhenlong</span>
+                </a>
+                <a>
+                  <p>Qinqi, thư pháp, hội họa và cờ vua đã thiết lập thế giới</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+        <li class="wanfa23">
+          <img src="./img/fbwf.png" onclick="openMenuWanfaPart3('wanfa23')">
+          <div id="wanfa23" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Chiến tranh Tống Liêu</span>
+                </a>
+                <a href="#">
+                  <p>Một số điều quan trọng mà chúng ta phải chú ý khi lập đội để tham gia vào cuộc chiến
+                    Tống-Liêu</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Sijuezhuang</span>
+                </a>
+                <a href="#">
+                  <p>Các kỹ năng của ngục tối khó khăn cao Sijuezhuang để chống lại ba đại lý lớn</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Yanziwu</span>
+                </a>
+                <a href="#">
+                  <p>Lập nhóm để chơi phần giới thiệu ba chiếc nhẫn của Pharaoh và các biện pháp phòng
+                    ngừa để nhận phần thưởng cao hơn</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Chiếc nhẫn thứ ba cũ</span>
+                </a>
+                <a href="#">
+                  <p>Hướng dẫn kỹ năng phá chiếc nhẫn thứ ba trong ngục tối cũ</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+        <li class="wanfa24">
+          <img src="./img/jhzl.png" onclick="openMenuWanfaPart3('wanfa24')">
+          <div id="wanfa24" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Đi du lịch thế giới</span>
+                </a>
+                <a href="#">
+                  <p>Đường đến sông hồ tham quan thế giới bao gồm các nhiệm vụ và phần thưởng</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Hiệp sỹ</span>
+                </a>
+                <a href="#">
+                  <p>Phần thưởng và tài liệu trò chơi</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Để nó đi</span>
+                </a>
+                <a href="#">
+                  <p>Jianghu Road Ren Xiaoyao giới thiệu nội dung và giới thiệu phần thưởng tích lũy mức
+                    độ hoàn thành</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Wu Lin Zun</span>
+                </a>
+                <a href="#">
+                  <p>Phần thưởng siêu việt của Wu Lin Zun ở Jianghu Road và sự giúp đỡ để nâng cao sức
+                    chiến đấu</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="wanfa3">
+        <li>
+          <img src="./img/dywf.png" alt="Các trò chơi đa dạng" onclick="closeAllMenuWanfaPart3()">
+        </li>
+        <li class="wanfa31">
+          <img src="./img/rchd.png" onclick="openMenuWanfaPart3('wanfa31')">
+          <div id="wanfa31" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Tên trộm BMW</span>
+                </a>
+                <a href="#">
+                  <p>Nhiều kinh nghiệm và phần thưởng vật phẩm, bạn đã sẵn sàng chưa, chàng trai
+                    trẻ?</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Nhiệm vụ hằng ngày</span>
+                </a>
+                <a href="#">
+                  <p>Các hoạt động chơi trò chơi hàng ngày, phân tích gian lận trong trò chơi</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Khám nghiệm Hoàng Gia</span>
+                </a>
+                <a href="#">
+                  <p>Giảng dạy Kỳ thi Hoàng gia</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Thử nghiệm các anh hùng</span>
+                </a>
+                <a href="#">
+                  <p>Gameplay mới và kỹ năng làm thủ tục hải quan trong sự kiện thử nghiệm anh
+                    hùng</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+        <li class="wanfa32">
+          <img src="./img/xshd.png" onclick="openMenuWanfaPart3('wanfa32')">
+          <div id="wanfa32" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Jinghu Bandit</span>
+                </a>
+                <a href="#">
+                  <p>Băng cướp đang tràn lan ở Jinghu, các anh hùng nhỏ tuổi phải nhớ đi theo đội</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Giải đấu Huashan</span>
+                </a>
+                <a href="#">
+                  <p>Giới thiệu và phân tích sự kiện khó khăn trong thời gian giới hạn Huashan
+                    Lunjian</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Quét Nhà trưng bày Hoa mẫu đơn</span>
+                </a>
+                <a>
+                  <p>Phần thưởng xa xỉ cho các sự kiện cấp độ giới hạn mỗi tuần một lần</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Trò chơi cờ Zhenlong</span>
+                </a>
+                <a>
+                  <p>Qinqi, thư pháp, hội họa và cờ vua đã thiết lập thế giới</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+        <li class="wanfa33">
+          <img src="./img/fbwf.png" onclick="openMenuWanfaPart3('wanfa33')">
+          <div id="wanfa33" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Chiến tranh Tống Liêu</span>
+                </a>
+                <a href="#">
+                  <p>Một số điều quan trọng mà chúng ta phải chú ý khi lập đội để tham gia vào cuộc chiến
+                    Tống-Liêu</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Sijuezhuang</span>
+                </a>
+                <a href="#">
+                  <p>Các kỹ năng của ngục tối khó khăn cao Sijuezhuang để chống lại ba đại lý lớn</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Yanziwu</span>
+                </a>
+                <a href="#">
+                  <p>Lập nhóm để chơi phần giới thiệu ba chiếc nhẫn của Pharaoh và các biện pháp phòng
+                    ngừa để nhận phần thưởng cao hơn</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Chiếc nhẫn thứ ba cũ</span>
+                </a>
+                <a href="#">
+                  <p>Hướng dẫn kỹ năng phá chiếc nhẫn thứ ba trong ngục tối cũ</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+        <li class="wanfa34">
+          <img src="./img/jhzl.png" onclick="openMenuWanfaPart3('wanfa34')">
+          <div id="wanfa34" class="wfText d__none">
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Đi du lịch thế giới</span>
+                </a>
+                <a href="#">
+                  <p>Đường đến sông hồ tham quan thế giới bao gồm các nhiệm vụ và phần thưởng</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Hiệp sỹ</span>
+                </a>
+                <a href="#">
+                  <p>Phần thưởng và tài liệu trò chơi</p>
+                </a>
+              </div>
+            </div>
+            <div class="d-grid grid-content">
+              <div class="block">
+                <a href="#">
+                  <span>Để nó đi</span>
+                </a>
+                <a href="#">
+                  <p>Jianghu Road Ren Xiaoyao giới thiệu nội dung và giới thiệu phần thưởng tích lũy mức
+                    độ hoàn thành</p>
+                </a>
+              </div>
+              <div class="block">
+                <a href="#">
+                  <span>Wu Lin Zun</span>
+                </a>
+                <a href="#">
+                  <p>Phần thưởng siêu việt của Wu Lin Zun ở Jianghu Road và sự giúp đỡ để nâng cao sức
+                    chiến đấu</p>
+                </a>
+              </div>
+            </div>
+            <a class="ckgd">Xem them</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="xinshou" class="content xinshou d__none">
+      <a href="#">
+        <img src="./img/sqgl.png" alt="Chiến lược tiết kiệm tiền ">
+      </a>
+      <a href="#">
+        <img src="./img/sjgl.png" alt="Nâng cấp chiến lược">
+      </a>
+      <a href="#">
+        <img src="./img/qwwf.png" alt="Trò chơi thú vị">
+      </a>
+    </div>
+    <div id="gaoshou" class="content gaoshou d__none">
+      <a href="#">
+        <img src="./img/zlts.png" alt="Tăng sức mạnh chiến đấu">
+      </a>
+      <a href="#">
+        <img src="./img/mcyc.png" alt="Phát triển vật nuôi dễ thương">
+      </a>
+      <a href="#">
+        <img src="./img/zbts.png" alt="Nâng cấp thiết bị">
+      </a>
+      <a href="#">
+        <img src="./img/jnzd.png" alt="Kỹ năng chỉ">
+      </a>
+    </div>
+  </div>
+  <div class="part2">
+    <h2 class="title"></h2>
+    <div class="panel2">
+      <div class="menu-wrapper">
+        <ul class="newsMenu">
+          <li class="tablinks active" onclick="openMenuPart2(event,'capnhat')">Cập nhật</li>
+          <li class="tablinks" onclick="openMenuPart2(event, 'tintuc')">Tin tức</li>
+          <li class="tablinks" onclick="openMenuPart2(event, 'thongbao')">Thông báo</li>
+          <li class="tablinks" onclick="openMenuPart2(event, 'bantinmoi')">Bản tin mới</li>
+        </ul>
       </div>
-      <div class="footer">
-        <div class="verticalLine"></div>
-        <div class="statement">
-          <p>Phát triển bởi đội ngũ con dân nước Việt</p>
-          <p>COPYRIGHT 2021 Viet Nam COMPANY LIMITED ALL RIGHTS RESERVED</p>
+      <div id="capnhat" class="list-content">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="tintuc" class="list-content d__none">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Đại hội võ lâm - Công thành chiến </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Xuất hiện minh chủ võ lâm </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Sự kiện vân tiêu </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Sự kiện chiến trận Đa Bang </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="thongbao" class="list-content d__none">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="bantinmoi" class="list-content d__none">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Bản tin mới </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Bản tin mới </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Bản tin mới </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="content-item__name">Bản tin mới </span>
+              <span class="content-item__date">05/09/2021</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bottomWrapper">
+    <div class="d-flex">
+      <div>
+        <div>
+          <img src="img/img-down-copy.png">
         </div>
       </div>
     </div>
   </div>
-  </div>
+</div>
+</div>
 </body>
