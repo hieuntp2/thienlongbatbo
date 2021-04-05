@@ -3,7 +3,7 @@ li {
 }
 
 .home-container {
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background-2.jpg");
   background-size: auto;
   background-position: top;
   height: 3800px;
@@ -58,7 +58,8 @@ li {
   margin-bottom: 8px;
 }
 
-.header__menu__item--active, .header__menu__item:hover {
+.header__menu__item--active,
+.header__menu__item:hover {
   background-image: url("../img/navHover.jpg");
   background-size: 100% 88px;
   color: #880704;
@@ -92,7 +93,7 @@ li {
   position: relative;
   width: 935px;
   height: 591px;
-  background: url('https://tlm.wan.com/gw/images/panel2.png') no-repeat;
+  background: url("https://tlm.wan.com/gw/images/panel2.png") no-repeat;
   background-size: 100%;
   margin: 0 auto;
   margin-top: 210px;
@@ -116,7 +117,7 @@ li {
   height: 377px;
   top: 155px;
   left: 40px;
-  background: url('https://tlm.wan.com/gw/images/newsMenu.png') no-repeat;
+  background: url("https://tlm.wan.com/gw/images/newsMenu.png") no-repeat;
 }
 
 .menu-wrapper .newsMenu {
@@ -139,7 +140,8 @@ li {
   list-style: none;
 }
 
-.menu-wrapper .newsMenu li:hover, li.active {
+.menu-wrapper .newsMenu li:hover,
+li.active {
   color: #f5e5b5 !important;
   background-color: #6a1a21;
 }
@@ -245,43 +247,48 @@ li {
 }
 
 .part3 .menpai .leftMenu .menpai1 {
-  background: url('../img/emei.png') no-repeat;
+  background: url("../img/emei.png") no-repeat;
 }
 
-.part3 .menpai .leftMenu .menpai1.active, .menpai1:hover {
-  background: url('../img/emeiCur.png') no-repeat !important;
+.part3 .menpai .leftMenu .menpai1.active,
+.menpai1:hover {
+  background: url("../img/emeiCur.png") no-repeat !important;
 }
 
 .part3 .menpai .leftMenu .menpai2 {
-  background: url('../img/gaibang.png') no-repeat;
+  background: url("../img/gaibang.png") no-repeat;
 }
 
-.part3 .menpai .leftMenu .menpai2.active, .menpai2:hover {
-  background: url('../img/gaibangCur.png') no-repeat !important;
+.part3 .menpai .leftMenu .menpai2.active,
+.menpai2:hover {
+  background: url("../img/gaibangCur.png") no-repeat !important;
 }
 
 .part3 .menpai .leftMenu .menpai3 {
-  background: url('../img/tianshan.png') no-repeat;
+  background: url("../img/tianshan.png") no-repeat;
 }
 
-.part3 .menpai .leftMenu .menpai3.active, .menpai3:hover {
-  background: url('../img/tianshanCur.png') no-repeat !important;
+.part3 .menpai .leftMenu .menpai3.active,
+.menpai3:hover {
+  background: url("../img/tianshanCur.png") no-repeat !important;
 }
 
 .part3 .menpai .leftMenu .menpai4 {
-  background: url('../img/xiaoyao.png') no-repeat;
+  background: url("../img/xiaoyao.png") no-repeat;
 }
 
-.part3 .menpai .leftMenu .menpai4.active, .menpai4:hover {
-  background: url('../img/xiaoyaoCur.png') no-repeat !important;
+.part3 .menpai .leftMenu .menpai4.active,
+.menpai4:hover {
+  background: url("../img/xiaoyaoCur.png") no-repeat !important;
 }
 
 .part3 .menpai .leftMenu .menpai5 {
-  background: url('../img/tianlong.png') no-repeat;
+  background: url("../img/tianlong.png") no-repeat;
 }
 
-.part3 .menpai .leftMenu .menpai5.active, .menpai5:hover {
-  background: url('../img/tianlongCur.png') no-repeat !important;
+.part3 .menpai .leftMenu .menpai5.active,
+.menpai5:hover {
+  background: url("../img/tianlongCur.png") no-repeat !important;
 }
 
 .part3 .menpai .leftMenu li {
@@ -486,7 +493,9 @@ a {
   padding-top: 35px;
 }
 
-.part4 .panel4 .dataContent .list .v, .m, .d {
+.part4 .panel4 .dataContent .list .v,
+.m,
+.d {
   width: 244px;
   height: 183px;
   margin: 10px 5px;
@@ -531,7 +540,6 @@ a {
   padding-top: 174px;
   box-sizing: border-box;
 }
-
 
 .bottomWrapper {
   width: 100%;
@@ -599,6 +607,21 @@ a {
   text-align: center;
 }
 
+.header-menu {
+  top: 700px;
+  position: relative;
+}
 
+.btn-big {
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  min-height: 90px;
+  color: red;
+  font-weight: 700;
+  font-family: cursive;
+  font-size: 25px;
+}
 
-
+.home-logo-intro {
+}
