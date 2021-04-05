@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/dangky.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./js/dangky.js"></script>
+</head>
+
+<body>
+    <div class=" header navbar-expand d-flex">
+        <div class="header-logo">
+            <img src="https://tlm.wan.com/gw/images/logo.png" />
+        </div>
+        <div class="header__menu d-flex w-100">
+            <div class="header__menu__item header__menu__item text-uppercase">
+                Trang chủ
+            </div>
+            <div class="header__menu__item text-uppercase">
+                Tin tức
+                <div class="header__submenu">
+                    <ul class="p-0">
+                        <li>Tin Tức</li>
+                        <li>Thông báo</li>
+                        <li>Hoạt động</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__menu__item text-uppercase">
+                Hướng dẫn
+            </div>
+            <div class="header__menu__item text-uppercase">
+                Dữ liệu
+            </div>
+            <div class="header__menu__item text-uppercase">
+                Quà tặng
+            </div>
+        </div>
+    </div>
+    <div class="home-container">
+        <div class="download__section">
+            <img src="img/img-down-copy.png">
+        </div>
+        <div class="form-dang-ky">
+            <div class="header">
+                <h2>Đăng ký tài khoản</h2>
+            </div>
+            <div class="form">
+                <form id="form-dang-ky" action="" method="post" class="row g-3 needs-validation d-flex justify-content-center">
+                    <div>
+                        <label for="taikhoan" class="form-label">Tài khoản</label>
+                        <input type="text" class="form-control" id="taikhoan" required minlength= 8 data-placement="bottom" title="Tooltip Text">
+                    </div>
+                    <div>
+                        <label for="matkhau" class="form-label">Mật khẩu</label>
+                        <input type="password" class="form-control" id="matkhau" required minlength= 8>
+                    </div>
+                    <div>
+                        <label for="matkhau2" class="form-label">Xác nhận mật khẩu</label>
+                        <input type="password" class="form-control" id="matkhau2" required>
+                    </div>
+                    <div>
+                        <label for="cauhoibimat" class="form-label">Câu hỏi bí mật</label>
+                        <select class="form-select" id="cauhoibimat" required>
+                            <option selected disabled value="">Chọn câu hỏi bí mật</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cautraloi" class="form-label">Trả lời</label>
+                        <input type="password" class="form-control" id="cautraloi" required>
+                    </div>
+                    <div>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <button class="btn w-50" type="submit">Đăng kí</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,43 @@
+.form-dang-ky {
+    width: 450px;
+    background-repeat: repeat;
+    border-radius: 16px;
+    background-color: #d2aa7a;
+}
+.home-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-dang-ky .form {
+    padding: 16px;
+}
+
+.header {
+    border-bottom: 1px solid rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.header h2 {
+    font-weight: bold;
+    color: #880704;
+}
+
+.form button {
+    background-color: #880704;
+    font-weight: bold;
+    color: white;
+}
+
+.form button:hover {
+    color: white;
+}
