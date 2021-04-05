@@ -1,0 +1,81 @@
+.home-container {
+    height: calc(100vh - 88px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rightis .titlenav {
+    background: url("../img/h2contentis.png") no-repeat;
+    height: 84px;
+    position: relative;
+}
+
+#rightis .titlenav .boxcontenttitle {
+    position: absolute;
+    top: 26px;
+    left: 86px;
+    color: #e4e0dd;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#rightis .content_is {
+    background: url("../img/bg_content.png") left top repeat-y;
+    padding-left: 50px;
+    padding-right: 45px;
+    color: #603913;
+    line-height: 19px;
+    font-size: 12px;
+    text-align: justify;
+    min-height: 650px;
+    max-width: 600px;
+    min-width: 500px;
+}
+
+.content_is > *:first-child {
+    margin-top: 0 !important;
+}
+
+.block_download .titteh {
+    background: url(http://tlphatkhin.com/images/site/tl/Layout/bg_h2.png) bottom left no-repeat;
+    width: 126px;
+    height: 22px;
+    padding-bottom: 21px;
+    color: #900;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table_download {
+    width: 530px;
+    text-align: left;
+}
+
+.block_download .titteh {
+    background: url("http://tlphatkhin.com/images/site/tl/Layout/bg_h2.png") bottom left no-repeat;
+    width: 126px;
+    height: 22px;
+    padding-bottom: 21px;
+    color: #900;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.block_download p {
+    display: block;
+    font-size: 11px;
+    padding-left: 10px;
+    color: #333;
+}
+
+#rightis .content_is table {
+    margin: 0 auto;
+}
+
+#rightis .ft_content_is {
+    background: url("../img/ft_bg_content.png") no-repeat;
+    height: 68px;
+}
