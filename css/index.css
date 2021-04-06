@@ -47,7 +47,7 @@ li {
   top: 88px;
   left: 0;
   padding-top: 10px;
-  background: linear-gradient(rgba(224, 200, 149, 0.7), rgba(224, 200, 149, 0));
+  background: linear-gradient(rgb(224 200 149), rgb(243 181 49 / 60%));
   font-size: 16px;
   width: 100%;
   justify-content: center;
@@ -633,14 +633,94 @@ a {
   flex: 2;
 }
 
-.btn-gradient{
+.btn-gradient {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
-background: #f3c5bd; /* Old browsers */
-background: -moz-linear-gradient(top,  #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
+  background: #f3c5bd; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #f3c5bd 0%,
+    #e86c57 50%,
+    #ea2803 51%,
+    #ff6600 75%,
+    #c72200 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #f3c5bd 0%,
+    #e86c57 50%,
+    #ea2803 51%,
+    #ff6600 75%,
+    #c72200 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f3c5bd 0%,
+    #e86c57 50%,
+    #ea2803 51%,
+    #ff6600 75%,
+    #c72200 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
 
-color: white !important;
+  color: white !important;
+}
+
+.righ-side-bar {
+  display: block;
+  position: fixed;
+  float: left;
+  /* top: 192px; */
+  right: 1%;
+  background: url(../img/bg-sidebar-right.png) 0 0 no-repeat;
+  width: 226px;
+  height: 603px;
+  position: fixed;
+  top: 15%;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.btn-rightside {
+  margin: 10px;
+  padding: 5px;
+  position: relative;
+  background-color: #a3e1ec;
+  width: 90px;
+  margin-right: 25px;
+}
+
+.btn-dangky {
+  top: 240px;
+}
+
+.btn-taikhoan {
+  top: 234px;
+}
+
+.btn-fanpage {
+  top: 224px;
+}
+
+.btn-fbgroup {
+  top: 219px;
+}
+
+.btn-napthe {
+  top: 269px;
+}
+
+.my-btn-image {
+  cursor: pointer;
+}
+.my-btn-image:hover img{
+  transform: translateY(-1px);
+}
+
+.my-btn-image:active img {
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
 }
