@@ -637,7 +637,14 @@ a {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
   background: #f3c5bd; /* Old browsers */
-  background: -moz-linear-gradient(top, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%); /* FF3.6-15 */
+  background: -moz-linear-gradient(
+    top,
+    #f3c5bd 0%,
+    #e86c57 50%,
+    #ea2803 51%,
+    #ff6600 75%,
+    #c72200 100%
+  ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     top,
     #f3c5bd 0%,
@@ -687,23 +694,51 @@ a {
 }
 
 .btn-dangky {
-  top: 240px;
+  top: 235px;
+  position: relative;
+  right: 10px;
+}
+
+.btn-dangky img {
+  width: 115px;
+  height: 40px;
 }
 
 .btn-taikhoan {
-  top: 234px;
+  top: 240px;
+  position: relative;
+  right: 10px;
+}
+
+.btn-taikhoan img {
+  width: 115px;
+  height: 40px;
 }
 
 .btn-fanpage {
-  top: 224px;
+  top: 246px;
+  position: relative;
+  right: 10px;
+}
+
+.btn-fanpage img {
+  width: 115px;
+  height: 40px;
 }
 
 .btn-fbgroup {
-  top: 219px;
+  top: 250px;
+  position: relative;
+  right: 10px;
+}
+
+.btn-fbgroup img {
+  width: 115px;
+  height: 40px;
 }
 
 .btn-napthe {
-  top: 278px;
+  top: 350px;
   position: relative;
   background-color: transparent;
   border: none;
@@ -714,9 +749,10 @@ a {
   width: 110px;
 }
 
-
 .my-btn-image {
   cursor: pointer;
+  background: transparent;
+  border: none;
 }
 .my-btn-image:hover img {
   transform: translateY(-1px);
