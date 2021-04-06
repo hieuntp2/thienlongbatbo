@@ -78,8 +78,8 @@ function closeAllMenuWanfaPart3() {
 }
 
 $(document).ready(function () {
-  $(".download__section").hide();
-  $(".righ-side-bar").hide();
+  // $(".download__section").hide();
+  // $(".righ-side-bar").hide();
 });
 
 window.onscroll = function () {
@@ -92,7 +92,6 @@ function checkScrollEvent() {
     document.documentElement.scrollTop ||
     document.body.scrollTop ||
     0;
-  // console.log(height);
 
   var body = document.body,
     html = document.documentElement;
@@ -106,7 +105,6 @@ function checkScrollEvent() {
   );
 
   var heighPercent = height / windowHeight; // > 10% will show slider
-  console.log(heighPercent);
 
   const topPercent = 0.1;
   const bottomPercent = 0.7;
