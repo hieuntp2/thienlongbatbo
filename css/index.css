@@ -637,14 +637,7 @@ a {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
   background: #f3c5bd; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #f3c5bd 0%,
-    #e86c57 50%,
-    #ea2803 51%,
-    #ff6600 75%,
-    #c72200 100%
-  ); /* FF3.6-15 */
+  background: -moz-linear-gradient(top, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     top,
     #f3c5bd 0%,
@@ -716,11 +709,91 @@ a {
 .my-btn-image {
   cursor: pointer;
 }
-.my-btn-image:hover img{
+.my-btn-image:hover img {
   transform: translateY(-1px);
 }
 
 .my-btn-image:active img {
   box-shadow: 0 5px #666;
   transform: translateY(2px);
+}
+
+.partNews {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.partNews .news {
+  background-image: url("../img/bg-news.jpg");
+  height: 520px;
+  width: 60%;
+  display: flex;
+  padding: 16px 0 16px 16px;
+  justify-content: space-between;
+}
+
+.news .left h3 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: #ffe58b;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.news .left p {
+  color: #fff3d4;
+}
+
+.news .left img {
+  width: 100%;
+}
+
+.news .left h3:hover {
+  color: white !important;
+}
+
+.news .left {
+  height: 100%;
+  width: 58%;
+}
+
+.right {
+  overflow-y: auto;
+  margin-left: 24px;
+  height: 100%;
+  width: 39%;
+}
+
+.item-news {
+  margin-top: 16px;
+  align-items: center;
+}
+
+.item-news h3 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: #ffe58b;
+  cursor: pointer;
+}
+
+.item-news h3:hover {
+  color: white !important;
+}
+
+.item-news img {
+  max-width: 114px;
+  margin-right: 16px;
+}
+
+.item-news .time {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #ababab;
+}
+
+.item-news .content {
+  height: fit-content;
 }
