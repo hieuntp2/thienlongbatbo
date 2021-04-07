@@ -1,8 +1,18 @@
 .home-container {
-    height: calc(100vh - 88px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: url("../img/topBg.jpg") left top no-repeat,
+        url("../img/bottmBg.jpg") left bottom no-repeat rgb(248, 248, 250) !important;
+    min-height: 1958px;
+    height: auto;
+}
+.download-container {
+    position: absolute;
+    top: 700px;
+    width: 100%;
+}
+#rightis {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #rightis .titlenav {
@@ -79,3 +89,11 @@
     background: url("../img/ft_bg_content.png") no-repeat;
     height: 68px;
 }
+
+.bottomWrapper {
+    width: 100%;
+    background-color: #0f0f10;
+    position: relative;
+    margin-top: 300px;
+}
+
