@@ -97,3 +97,15 @@
     margin-top: 300px;
 }
 
+.bottomWrapper2 {
+  width: 100%;
+  background-color: #0f0f10;
+  position: relative;
+}
+
+.contentWrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
