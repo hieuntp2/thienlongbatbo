@@ -97,6 +97,7 @@ li {
   background-size: 100%;
   margin: 0 auto;
   margin-top: 210px;
+  top: 500px;
 }
 
 .partSlide {
@@ -129,15 +130,15 @@ li {
 }
 
 .menu-wrapper .newsMenu li {
-  height: 44px;
-  line-height: 44px;
-  font-size: 18px;
+  text-align: center;
+  font-size: 15px;
   font-weight: bold;
   color: #902404;
-  margin: 20px 0;
+  margin: 10px 0;
   text-align: center;
   cursor: pointer;
   list-style: none;
+  padding: 8px;
 }
 
 .menu-wrapper .newsMenu li:hover,
@@ -191,6 +192,8 @@ li.active {
   height: 980px;
   padding-top: 90px;
   box-sizing: border-box;
+  position: relative;
+  top: 500px;
 }
 
 .part3Menu {
@@ -753,6 +756,7 @@ a {
   cursor: pointer;
   background: transparent;
   border: none;
+  width: fit-content;
 }
 .my-btn-image:hover img {
   transform: translateY(-1px);
@@ -767,6 +771,10 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  top: 494px;
+  position: relative;
 }
 .partNews .news {
   background-image: url("../img/bg-news.jpg");
@@ -840,4 +848,43 @@ a {
 
 .item-news .content {
   height: fit-content;
+}
+
+.section-header {
+  padding: 30px;
+}
+
+.section-header .title {
+  font-size: 45px;
+  color: #d4b453;
+}
+
+.download-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 4%;
+  left: 15%;
+}
+
+.download-box .part-2-box {
+  margin-left: 90px;
+}
+.download-box .part-3-box {
+  margin-left: 90px;
+}
+
+.part-2-box {
+  margin-top: 1px;
+}
+.part-2-box .btn-small img {
+  width: 147px;
+}
+
+.part-3-box {
+  margin-top: 1px;
+}
+
+.part-3-box .btn-wide img {
+  width: 298px;
 }
