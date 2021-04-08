@@ -1,0 +1,369 @@
+.part1 {
+  height: 900px;
+}
+
+.home-container {
+  background-image: url("../img/background-2.jpg");
+  background-size: auto;
+  background-position: top;
+  height: 3800px;
+  position: relative;
+  min-width: 1366px;
+}
+
+.part3 {
+  width: 100%;
+  height: 980px;
+  padding-top: 90px;
+  box-sizing: border-box;
+  position: relative;
+  top: 500px;
+  .content {
+    position: relative;
+    width: 1350px;
+    height: 820px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  .leftMenu {
+    .menpai1 {
+      background: url("../img/emei.png") no-repeat;
+    }
+    .menpai1.active {
+      background: url("../img/emeiCur.png") no-repeat !important;
+    }
+    .menpai2 {
+      background: url("../img/gaibang.png") no-repeat;
+    }
+    .menpai2.active {
+      background: url("../img/gaibangCur.png") no-repeat !important;
+    }
+    .menpai3 {
+      background: url("../img/tianshan.png") no-repeat;
+    }
+    .menpai3.active {
+      background: url("../img/tianshanCur.png") no-repeat !important;
+    }
+    .menpai4 {
+      background: url("../img/xiaoyao.png") no-repeat;
+    }
+    .menpai4.active {
+      background: url("../img/xiaoyaoCur.png") no-repeat !important;
+    }
+    .menpai5 {
+      background: url("../img/tianlong.png") no-repeat;
+    }
+    .menpai5.active {
+      background: url("../img/tianlongCur.png") no-repeat !important;
+    }
+    li {
+      width: 61px;
+      height: 132px;
+      cursor: pointer;
+    }
+  }
+  .menpai {
+    .tab {
+      position: absolute;
+      width: 1080px;
+      height: 780px;
+      left: 300px;
+      color: #cecece;
+      .tabContent {
+        h3 {
+          font-size: 40px;
+          color: #f5e5b5;
+        }
+      }
+      .intro {
+        margin-top: 35px;
+        span {
+          display: block;
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+        .describe {
+          width: 290px;
+          text-indent: 2em;
+          line-height: 22px;
+          margin-bottom: 40px;
+        }
+      }
+      .mpMore {
+        display: block;
+        margin: 30px 0 0 180px;
+        width: 80px;
+        height: 20px;
+        line-height: 20px;
+        border: #f6e8bf 1px solid;
+        color: #f6e8bf;
+        padding: 5px 18px 5px 18px;
+        box-sizing: content-box;
+        border-radius: 18px;
+        text-align: center;
+      }
+      .skill {
+        margin: 50px 0 0 80px;
+      }
+      .person {
+        position: absolute;
+        top: 0;
+        left: 340px;
+      }
+    }
+  }
+  .wanfa {
+    ul {
+      width: 100%;
+      height: 251px;
+      margin-bottom: 4px;
+      width: 100%;
+      height: 251px;
+      margin-bottom: 4px;
+      .wfText {
+        position: relative;
+        span {
+          color: #6c4b0b;
+          font-weight: bold;
+        }
+        .ckgd {
+          cursor: pointer;
+          color: #6c4b0b;
+          font-weight: bold;
+        }
+        p {
+          color: #b18c68;
+        }
+      }
+      p {
+        width: auto;
+        font-size: 12px;
+      }
+    }
+    li {
+      float: left;
+      margin-left: 6px;
+      float: left;
+      margin-left: 6px;
+      .wfText {
+        width: 400px;
+        height: 251px;
+        float: right;
+        background-color: white;
+      }
+    }
+  }
+  .xinshou {
+    width: 800px;
+    a {
+      display: block;
+      margin: 0 42px;
+      float: left;
+      &:nth-child(2) {
+        margin-top: 100px;
+      }
+    }
+  }
+  .gaoshou {
+    width: 1065px;
+    a {
+      display: block;
+      margin: 0 42px;
+      float: left;
+      &:nth-child(2n) {
+        margin-top: 100px;
+      }
+    }
+  }
+  .content.wanfa {
+    width: 70%;
+  }
+  .dsBangPhai {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+    .menpai-item {
+      width: 61px;
+      height: 132px;
+      margin-right: 30px;
+      cursor: pointer;
+    }
+  }
+}
+.part3Menu {
+  color: white;
+  opacity: 0.8;
+}
+
+.part3__top-menu {
+  width: 825px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 46px 0 0 32px;
+  margin-top: 50px;
+  div.menu {
+    width: 25%;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    &:hover {
+      color: #f5e5b5 !important;
+      opacity: 1 !important;
+    }
+  }
+  div.active {
+    color: #f5e5b5 !important;
+  }
+  div.line {
+    width: 775px;
+    height: 24px;
+    margin: 0 auto;
+    background: url("../img/line.png") no-repeat;
+  }
+}
+
+.menpai1 {
+  &:hover {
+    background: url("../img/emeiCur.png") no-repeat !important;
+  }
+}
+
+.menpai2 {
+  &:hover {
+    background: url("../img/gaibangCur.png") no-repeat !important;
+  }
+}
+
+.menpai3 {
+  &:hover {
+    background: url("../img/tianshanCur.png") no-repeat !important;
+  }
+}
+.menpai4 {
+  &:hover {
+    background: url("../img/xiaoyaoCur.png") no-repeat !important;
+  }
+}
+.menpai5 {
+  &:hover {
+    background: url("../img/tianlongCur.png") no-repeat !important;
+  }
+}
+
+.part4 {
+  .panel4 {
+    width: 1043px;
+    height: 674px;
+    margin: 0 auto;
+    padding-top: 150px;
+    .dataMenu {
+      width: 1000px;
+      height: 40px;
+      margin: 40px auto 0;
+      border-top: 1px solid #646464;
+      ul {
+        li.current {
+          color: #9b352b;
+          border-top: 2px solid #9b352b;
+        }
+        li {
+          float: left;
+          width: 116px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          font-size: 20px;
+          font-weight: bold;
+          color: #646464;
+          cursor: pointer;
+        }
+      }
+    }
+    .dataContent {
+      width: 1022px;
+      height: 500px;
+      margin: 0 auto;
+      .list {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 35px;
+        .v {
+          width: 244px;
+          height: 183px;
+          margin: 10px 5px;
+          float: left;
+        }
+        div {
+          a {
+            &:first-child {
+              display: block;
+              width: 244px;
+              height: 137px;
+            }
+          }
+        }
+        .date {
+          color: #a2a2a2;
+          font-size: 12px;
+        }
+        .more {
+          float: left;
+          margin-left: 900px;
+          margin-top: 30px;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: bold;
+          color: #902404;
+        }
+        .title {
+          font-size: 16px;
+          color: #232323;
+          margin: 10px 0 3px;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  width: 100%;
+  height: 870px;
+  padding-top: 174px;
+  box-sizing: border-box;
+}
+
+.part2 {
+  position: relative;
+  width: 935px;
+  height: 780px;
+  background: url("https://tlm.wan.com/gw/images/panel2.png") no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  margin-top: 210px;
+  top: 500px;
+}
+
+.partSlide {
+  height: 591px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .carousel {
+    width: 800px;
+    height: 400px;
+  }
+}
+
+.bottomWrapper {
+    width: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: 490px;
+    background-color: #0f0f10;
+  }
+  

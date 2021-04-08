@@ -1,5 +1,5 @@
-li {
-  list-style: none;
+.part1 {
+  height: 900px;
 }
 
 .home-container {
@@ -11,226 +11,14 @@ li {
   min-width: 1366px;
 }
 
-.navbar-expand {
-  height: 88px;
-  padding-left: 15%;
-  padding-right: 15%;
-  background-color: rgba(22, 1, 1, 0.74);
-  flex-direction: row;
-  display: flex;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-.header .header-logo {
-  width: fit-content;
-  margin-right: 5%;
-}
-
-.header__menu__item {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  font-size: 1em;
-  font-weight: bold;
-  color: #d2aa7a;
-  cursor: pointer;
-  justify-content: center;
-}
-
-.header__submenu {
-  display: none;
-  position: absolute;
-  top: 88px;
-  left: 0;
-  padding-top: 10px;
-  background: linear-gradient(rgb(224 200 149), rgb(243 181 49 / 60%));
-  font-size: 16px;
-  width: 100%;
-  justify-content: center;
-}
-
-.header__submenu ul li {
-  list-style: none;
-  margin-bottom: 8px;
-}
-
-.header__menu__item--active,
-.header__menu__item:hover {
-  background-image: url("../img/navHover.jpg");
-  background-size: 100% 88px;
-  color: #880704;
-  position: relative;
-}
-
-.header__menu__item:hover .header__submenu {
-  display: block;
-}
-
-.part1 {
-  height: 900px;
-}
-
-.download__section {
-  display: block;
-  position: fixed;
-  float: left;
-  top: 155px;
-  left: 1%;
-  overflow: hidden;
-  z-index: 9;
-  width: 230px;
-}
-
-.download__section img {
-  width: 100%;
-}
-
-.part2 {
-  position: relative;
-  width: 935px;
-  height: 780px;
-  background: url("https://tlm.wan.com/gw/images/panel2.png") no-repeat;
-  background-size: 100%;
-  margin: 0 auto;
-  margin-top: 210px;
-  top: 500px;
-}
-
-.partSlide {
-  height: 591px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.partSlide .carousel {
-  width: 800px;
-  height: 400px;
-}
-
-.menu-wrapper {
-  position: absolute;
-  width: 112px;
-  height: 377px;
-  top: 155px;
-  left: 40px;
-  background: url("https://tlm.wan.com/gw/images/newsMenu.png") no-repeat;
-}
-
-.menu-wrapper .newsMenu {
-  position: absolute;
-  width: 100px;
-  top: 30px;
-  left: 6px;
-  padding: 0;
-}
-
-.menu-wrapper .newsMenu li {
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-  color: #902404;
-  margin: 10px 0;
-  text-align: center;
-  cursor: pointer;
-  list-style: none;
-  padding: 8px;
-}
-
-.menu-wrapper .newsMenu li:hover,
-li.active {
-  color: #f5e5b5 !important;
-  background-color: #6a1a21;
-}
-
-.list-content {
-  position: absolute;
-  top: 215px;
-  left: 230px;
-  width: 700px;
-  height: 270px;
-}
-
-.list-content ul {
-  width: 700px;
-  height: 270px;
-}
-
-.list-content ul li {
-  width: 100%;
-  height: 35px;
-  line-height: 35px;
-}
-
-.list-content ul li a {
-  color: #756b6b;
-  font-size: 16px;
-  font-weight: bold;
-  width: 100%;
-}
-
-.list-content ul li a .content-item__date {
-  position: absolute;
-  font-weight: normal;
-  right: 40px;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.d__none {
-  display: none !important;
-}
-
 .part3 {
   width: 100%;
   height: 980px;
   padding-top: 90px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   top: 500px;
-}
-
-.part3Menu {
-  color: white;
-  opacity: 0.8;
-}
-
-.part3__top-menu {
-  width: 825px;
-  height: 100px;
-  margin: 0 auto;
-  padding: 46px 0 0 32px;
-  margin-top: 50px;
-}
-
-.part3__top-menu div.menu {
-  width: 25%;
-  cursor: pointer;
-  text-align: center;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.part3__top-menu div.menu:hover {
-  color: #f5e5b5 !important;
-  opacity: 1 !important;
-}
-
-.part3__top-menu div.active {
-  color: #f5e5b5 !important;
-}
-
-.part3__top-menu div.line {
-  width: 775px;
-  height: 24px;
-  margin: 0 auto;
-  background: url("../img/line.png") no-repeat;
 }
 
 .part3 .content {
@@ -245,8 +33,7 @@ li.active {
   background: url("../img/emei.png") no-repeat;
 }
 
-.part3 .leftMenu .menpai1.active,
-.menpai1:hover {
+.part3 .leftMenu .menpai1.active {
   background: url("../img/emeiCur.png") no-repeat !important;
 }
 
@@ -254,8 +41,7 @@ li.active {
   background: url("../img/gaibang.png") no-repeat;
 }
 
-.part3 .leftMenu .menpai2.active,
-.menpai2:hover {
+.part3 .leftMenu .menpai2.active {
   background: url("../img/gaibangCur.png") no-repeat !important;
 }
 
@@ -263,8 +49,7 @@ li.active {
   background: url("../img/tianshan.png") no-repeat;
 }
 
-.part3 .leftMenu .menpai3.active,
-.menpai3:hover {
+.part3 .leftMenu .menpai3.active {
   background: url("../img/tianshanCur.png") no-repeat !important;
 }
 
@@ -272,8 +57,7 @@ li.active {
   background: url("../img/xiaoyao.png") no-repeat;
 }
 
-.part3 .leftMenu .menpai4.active,
-.menpai4:hover {
+.part3 .leftMenu .menpai4.active {
   background: url("../img/xiaoyaoCur.png") no-repeat !important;
 }
 
@@ -281,8 +65,7 @@ li.active {
   background: url("../img/tianlong.png") no-repeat;
 }
 
-.part3 .leftMenu .menpai5.active,
-.menpai5:hover {
+.part3 .leftMenu .menpai5.active {
   background: url("../img/tianlongCur.png") no-repeat !important;
 }
 
@@ -332,7 +115,8 @@ li.active {
   border: #f6e8bf 1px solid;
   color: #f6e8bf;
   padding: 5px 18px 5px 18px;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   border-radius: 18px;
   text-align: center;
 }
@@ -351,11 +135,47 @@ li.active {
   width: 100%;
   height: 251px;
   margin-bottom: 4px;
+  width: 100%;
+  height: 251px;
+  margin-bottom: 4px;
+}
+
+.part3 .wanfa ul .wfText {
+  position: relative;
+}
+
+.part3 .wanfa ul .wfText span {
+  color: #6c4b0b;
+  font-weight: bold;
+}
+
+.part3 .wanfa ul .wfText .ckgd {
+  cursor: pointer;
+  color: #6c4b0b;
+  font-weight: bold;
+}
+
+.part3 .wanfa ul .wfText p {
+  color: #b18c68;
+}
+
+.part3 .wanfa ul p {
+  width: auto;
+  font-size: 12px;
 }
 
 .part3 .wanfa li {
   float: left;
   margin-left: 6px;
+  float: left;
+  margin-left: 6px;
+}
+
+.part3 .wanfa li .wfText {
+  width: 400px;
+  height: 251px;
+  float: right;
+  background-color: white;
 }
 
 .part3 .xinshou {
@@ -390,58 +210,87 @@ li.active {
   width: 70%;
 }
 
-.part3 .wanfa ul {
-  width: 100%;
-  height: 251px;
-  margin-bottom: 4px;
+.part3 .dsBangPhai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
 }
 
-.part3 .wanfa li {
-  float: left;
-  margin-left: 6px;
-}
-
-.part3 .wanfa ul .wfText {
-  position: relative;
-}
-
-.part3 .wanfa li .wfText {
-  width: 400px;
-  height: 251px;
-  float: right;
-  background-color: white;
-}
-
-.part3 .wanfa ul .wfText span {
-  color: #6c4b0b;
-  font-weight: bold;
-}
-
-.part3 .wanfa ul .wfText .ckgd {
+.part3 .dsBangPhai .menpai-item {
+  width: 61px;
+  height: 132px;
+  margin-right: 30px;
   cursor: pointer;
-  color: #6c4b0b;
+}
+
+.part3Menu {
+  color: white;
+  opacity: 0.8;
+}
+
+.part3__top-menu {
+  width: 825px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 46px 0 0 32px;
+  margin-top: 50px;
+}
+
+.part3__top-menu div.menu {
+  width: 25%;
+  cursor: pointer;
+  text-align: center;
   font-weight: bold;
+  font-size: 25px;
 }
 
-.part3 .wanfa ul p {
-  width: auto;
-  font-size: 12px;
+.part3__top-menu div.menu:hover {
+  color: #f5e5b5 !important;
+  opacity: 1 !important;
 }
 
-.grid-content {
-  grid-template-columns: 1fr 1fr;
-  padding-left: 10px;
-  padding-right: 10px;
-  grid-gap: 20px;
+.part3__top-menu div.active {
+  color: #f5e5b5 !important;
 }
 
-a {
-  text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.35);
+.part3__top-menu div.line {
+  width: 775px;
+  height: 24px;
+  margin: 0 auto;
+  background: url("../img/line.png") no-repeat;
 }
 
-.part3 .wanfa ul .wfText p {
-  color: #b18c68;
+.menpai1:hover {
+  background: url("../img/emeiCur.png") no-repeat !important;
+}
+
+.menpai2:hover {
+  background: url("../img/gaibangCur.png") no-repeat !important;
+}
+
+.menpai3:hover {
+  background: url("../img/tianshanCur.png") no-repeat !important;
+}
+
+.menpai4:hover {
+  background: url("../img/xiaoyaoCur.png") no-repeat !important;
+}
+
+.menpai5:hover {
+  background: url("../img/tianlongCur.png") no-repeat !important;
+}
+
+.part4 {
+  width: 100%;
+  height: 870px;
+  padding-top: 174px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .part4 .panel4 {
@@ -488,9 +337,7 @@ a {
   padding-top: 35px;
 }
 
-.part4 .panel4 .dataContent .list .v,
-.m,
-.d {
+.part4 .panel4 .dataContent .list .v {
   width: 244px;
   height: 183px;
   margin: 10px 5px;
@@ -501,11 +348,6 @@ a {
   display: block;
   width: 244px;
   height: 137px;
-}
-
-.part4 .panel4 .dataContent img {
-  width: 100%;
-  height: 100%;
 }
 
 .part4 .panel4 .dataContent .list .date {
@@ -529,385 +371,45 @@ a {
   margin: 10px 0 3px;
 }
 
-.part4 {
+.part4 .panel4 .dataContent img {
   width: 100%;
-  height: 870px;
-  padding-top: 174px;
-  box-sizing: border-box;
+  height: 100%;
 }
 
-.bottomWrapper {
-  width: 100%;
-}
-
-.bottomWrapper .bottom {
+.part2 {
   position: relative;
-  width: 1000px;
-  height: 325px;
+  width: 935px;
+  height: 780px;
+  background: url("https://tlm.wan.com/gw/images/panel2.png") no-repeat;
+  background-size: 100%;
   margin: 0 auto;
+  margin-top: 210px;
+  top: 500px;
 }
 
-.bottomWrapper .bottom .icon {
-  margin: 127px 0 0 250px;
-}
-
-.bottomWrapper .bottom table {
-  color: #e8e4cf;
-  position: absolute;
-  top: 127px;
-  left: 450px;
-}
-
-.bottomWrapper .bottom table td {
-  padding: 4px 80px 4px 0;
-}
-
-.bottomWrapper .footer {
-  width: 100%;
-  height: 150px;
-  background-color: #0f0f10;
-  position: relative;
-}
-
-.bottomWrapper .footer .cyIcon {
-  position: absolute;
-  top: 60px;
-  left: 500px;
-}
-
-.bottomWrapper .footer .verticalLine {
-  width: 1px;
-  height: 31px;
-  background-color: #828282;
-  position: absolute;
-}
-
-.bottomWrapper .footer .roadIcon {
-  position: absolute;
-  top: 60px;
-  left: 615px;
-}
-
-.bottomWrapper .footer .statement {
-  position: absolute;
-  width: 470px;
-  height: 40px;
-  color: #828282;
-  top: 60px;
-  left: 825px;
-}
-
-.bottomWrapper .footer .statement p {
-  text-align: center;
-}
-
-.header-menu {
-  top: 700px;
-  position: relative;
-}
-
-.btn-big {
-  background-color: white;
-  padding: 10px;
-  margin: 5px;
-  min-height: 90px;
-  color: red;
-  font-weight: 700;
-  font-family: cursive;
-  font-size: 25px;
-}
-
-.home-logo-intro {
-}
-
-.my-flex-1 {
-  flex: 1;
-}
-
-.my-flex-2 {
-  flex: 2;
-}
-
-.btn-gradient {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
-  background: #f3c5bd; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #f3c5bd 0%,
-    #e86c57 50%,
-    #ea2803 51%,
-    #ff6600 75%,
-    #c72200 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #f3c5bd 0%,
-    #e86c57 50%,
-    #ea2803 51%,
-    #ff6600 75%,
-    #c72200 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #f3c5bd 0%,
-    #e86c57 50%,
-    #ea2803 51%,
-    #ff6600 75%,
-    #c72200 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
-
-  color: white !important;
-}
-
-.righ-side-bar {
-  display: block;
-  position: fixed;
-  float: left;
-  /* top: 192px; */
-  right: 1%;
-  background: url(../img/bg-sidebar-right.png) 0 0 no-repeat;
-  width: 226px;
-  height: 603px;
-  position: fixed;
-  top: 15%;
-  right: 0;
-  z-index: 100;
+.partSlide {
+  height: 591px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.btn-rightside {
-  margin: 10px;
-  padding: 5px;
-  position: relative;
-  background-color: #a3e1ec;
-  width: 90px;
-  margin-right: 25px;
-}
-
-.btn-dangky {
-  top: 235px;
-  position: relative;
-  right: 10px;
-}
-
-.btn-dangky img {
-  width: 115px;
-  height: 40px;
-}
-
-.btn-taikhoan {
-  top: 240px;
-  position: relative;
-  right: 10px;
-}
-
-.btn-taikhoan img {
-  width: 115px;
-  height: 40px;
-}
-
-.btn-fanpage {
-  top: 246px;
-  position: relative;
-  right: 10px;
-}
-
-.btn-fanpage img {
-  width: 115px;
-  height: 40px;
-}
-
-.btn-fbgroup {
-  top: 250px;
-  position: relative;
-  right: 10px;
-}
-
-.btn-fbgroup img {
-  width: 115px;
-  height: 40px;
-}
-
-.btn-napthe {
-  top: 350px;
-  position: relative;
-  background-color: transparent;
-  border: none;
-  right: 10px;
-}
-
-.btn-napthe img {
-  width: 110px;
-}
-
-.my-btn-image {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  width: fit-content;
-}
-.my-btn-image:hover img {
-  transform: translateY(-1px);
-}
-
-.my-btn-image:active img {
-  transform: translateY(2px);
-}
-
-.partNews {
-  height: 550px;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  flex-direction: column;
-  align-items: center;
-  top: 494px;
-  position: relative;
-}
-.partNews .news {
-  background-image: url("../img/bg-news.jpg");
-  height: 520px;
-  width: 60%;
-  display: flex;
-  padding: 16px 0 16px 16px;
-  justify-content: space-between;
-}
-
-.news .left h3 {
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-  color: #ffe58b;
-  cursor: pointer;
-  margin-top: 16px;
-}
-
-.news .left p {
-  color: #fff3d4;
-}
-
-.news .left img {
-  width: 100%;
-}
-
-.news .left h3:hover {
-  color: white !important;
-}
-
-.news .left {
-  height: 100%;
-  width: 58%;
-}
-
-.right {
-  overflow-y: auto;
-  margin-left: 24px;
-  height: 100%;
-  width: 39%;
-}
-
-.item-news {
-  margin-top: 16px;
-  align-items: center;
-}
-
-.item-news h3 {
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-  color: #ffe58b;
-  cursor: pointer;
-}
-
-.item-news h3:hover {
-  color: white !important;
-}
-
-.item-news img {
-  max-width: 114px;
-  margin-right: 16px;
-}
-
-.item-news .time {
-  font-size: 12px;
-  margin-bottom: 10px;
-  color: #ababab;
-}
-
-.item-news .content {
-  height: fit-content;
-}
-
-.section-header {
-  padding: 30px;
-}
-
-.section-header .title {
-  font-size: 45px;
-  color: #d4b453;
-}
-
-.download-box {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 4%;
-  left: 15%;
-}
-
-.download-box .part-2-box {
-  margin-left: 90px;
-}
-.download-box .part-3-box {
-  margin-left: 90px;
-}
-
-.part-2-box {
-  margin-top: 1px;
-}
-.part-2-box .btn-small img {
-  width: 147px;
-}
-
-.part-3-box {
-  margin-top: 1px;
-}
-
-.part-3-box .btn-wide img {
-  width: 298px;
+.partSlide .carousel {
+  width: 800px;
+  height: 400px;
 }
 
 .bottomWrapper {
+  width: 100%;
   width: 100%;
   position: relative;
   margin-top: 490px;
+  background-color: #0f0f10;
 }
-
-.footer {
-  height: 150px;
-  background-color: #000000;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.footer p {
-  color: white
-}
-
-.part3 .dsBangPhai {
-  display: flex;
-  height: 50px;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.part3 .dsBangPhai .menpai-item {
-  width: 61px;
-  height: 132px;
-  margin-right: 30px;
-}
+/*# sourceMappingURL=index.css.map */
