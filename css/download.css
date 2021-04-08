@@ -109,3 +109,15 @@
   width: fit-content;
 }
 
+.footer {
+    height: 150px;
+    background-color: #000000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer p {
+    color: white
+}
+

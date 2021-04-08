@@ -238,63 +238,55 @@ li.active {
   width: 1350px;
   height: 820px;
   margin: 0 auto;
-  padding-top: 70px;
+  margin-top: 70px;
 }
 
-.part3 .menpai .leftMenu {
-  position: absolute;
-  width: 61px;
-  height: 660px;
-  left: 175px;
-  top: 16px;
-}
-
-.part3 .menpai .leftMenu .menpai1 {
+.part3 .leftMenu .menpai1 {
   background: url("../img/emei.png") no-repeat;
 }
 
-.part3 .menpai .leftMenu .menpai1.active,
+.part3 .leftMenu .menpai1.active,
 .menpai1:hover {
   background: url("../img/emeiCur.png") no-repeat !important;
 }
 
-.part3 .menpai .leftMenu .menpai2 {
+.part3 .leftMenu .menpai2 {
   background: url("../img/gaibang.png") no-repeat;
 }
 
-.part3 .menpai .leftMenu .menpai2.active,
+.part3 .leftMenu .menpai2.active,
 .menpai2:hover {
   background: url("../img/gaibangCur.png") no-repeat !important;
 }
 
-.part3 .menpai .leftMenu .menpai3 {
+.part3 .leftMenu .menpai3 {
   background: url("../img/tianshan.png") no-repeat;
 }
 
-.part3 .menpai .leftMenu .menpai3.active,
+.part3 .leftMenu .menpai3.active,
 .menpai3:hover {
   background: url("../img/tianshanCur.png") no-repeat !important;
 }
 
-.part3 .menpai .leftMenu .menpai4 {
+.part3 .leftMenu .menpai4 {
   background: url("../img/xiaoyao.png") no-repeat;
 }
 
-.part3 .menpai .leftMenu .menpai4.active,
+.part3 .leftMenu .menpai4.active,
 .menpai4:hover {
   background: url("../img/xiaoyaoCur.png") no-repeat !important;
 }
 
-.part3 .menpai .leftMenu .menpai5 {
+.part3 .leftMenu .menpai5 {
   background: url("../img/tianlong.png") no-repeat;
 }
 
-.part3 .menpai .leftMenu .menpai5.active,
+.part3 .leftMenu .menpai5.active,
 .menpai5:hover {
   background: url("../img/tianlongCur.png") no-repeat !important;
 }
 
-.part3 .menpai .leftMenu li {
+.part3 .leftMenu li {
   width: 61px;
   height: 132px;
   cursor: pointer;
@@ -887,4 +879,35 @@ a {
 
 .part-3-box .btn-wide img {
   width: 298px;
+}
+
+.bottomWrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 490px;
+}
+
+.footer {
+  height: 150px;
+  background-color: #000000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footer p {
+  color: white
+}
+
+.part3 .dsBangPhai {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.part3 .dsBangPhai .menpai-item {
+  width: 61px;
+  height: 132px;
+  margin-right: 30px;
 }
