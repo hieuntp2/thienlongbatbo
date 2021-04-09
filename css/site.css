@@ -3,8 +3,7 @@ li {
 }
 
 .page-container {
-  background: url("../img/topBg1.jpg") left top no-repeat,
-    url("../img/bottmBg.jpg") left bottom no-repeat #f8f8fa !important;
+  background: url("../img/topBg1.jpg") left top no-repeat, url("../img/bottmBg.jpg") left bottom no-repeat #f8f8fa !important;
   padding-bottom: 50px;
   height: auto;
 }
@@ -16,8 +15,8 @@ li {
   background-color: rgba(22, 1, 1, 0.74);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,15 +41,15 @@ li {
   display: flex;
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1em;
   font-weight: bold;
   color: #d2aa7a;
   cursor: pointer;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__menu__item:hover {
@@ -70,19 +69,13 @@ li {
   top: 88px;
   left: 0;
   padding-top: 10px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(RGB(224 200 149)),
-    to(RGB(243 181 49/60%))
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(RGB(224 200 149)), to(RGB(243 181 49/60%)));
   background: linear-gradient(RGB(224 200 149), RGB(243 181 49/60%));
   font-size: 16px;
   width: 100%;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__submenu ul li {
@@ -98,7 +91,7 @@ li {
 }
 
 .page-header {
-  height: 30vh;
+  height: 40vh;
 }
 
 .download__section {
@@ -197,7 +190,7 @@ li.active {
 
 .grid-content {
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   padding-left: 10px;
   padding-right: 10px;
   grid-gap: 20px;
@@ -226,7 +219,7 @@ a {
   width: 100%;
   width: 100%;
   position: relative;
-  background-color: #0f0f10;
+  background-color: #232323;
 }
 
 .bottomWrapper .bottom {
@@ -239,8 +232,8 @@ a {
 .bottomWrapper .bottom .icon {
   width: auto;
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: inline-block;
 }
 
@@ -248,8 +241,8 @@ a {
   display: inline-block;
   position: relative;
   -webkit-box-flex: 10;
-  -ms-flex: 10;
-  flex: 10;
+      -ms-flex: 10;
+          flex: 10;
   color: #e8e4cf;
   top: 23%;
   left: 450px;
@@ -316,36 +309,20 @@ a {
 
 .my-flex-1 {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .my-flex-2 {
   -webkit-box-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .btn-gradient {
   background: #f3c5bd;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#f3c5bd),
-    color-stop(50%, #e86c57),
-    color-stop(51%, #ea2803),
-    color-stop(75%, #ff6600),
-    to(#c72200)
-  );
-  background: linear-gradient(
-    to bottom,
-    #f3c5bd 0%,
-    #e86c57 50%,
-    #ea2803 51%,
-    #ff6600 75%,
-    #c72200 100%
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3c5bd), color-stop(50%, #e86c57), color-stop(51%, #ea2803), color-stop(75%, #ff6600), to(#c72200));
+  background: linear-gradient(to bottom, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 );
   color: white !important;
 }
@@ -367,11 +344,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .btn-rightside {
@@ -450,12 +427,12 @@ a {
 
 .my-btn-image:hover img {
   -webkit-transform: translateY(-1px);
-  transform: translateY(-1px);
+          transform: translateY(-1px);
 }
 
 .my-btn-image:active img {
   -webkit-transform: translateY(2px);
-  transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 .partNews {
@@ -464,16 +441,16 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 494px;
   position: relative;
 }
@@ -487,8 +464,8 @@ a {
   display: flex;
   padding: 16px 0 16px 16px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .news .left {
@@ -527,8 +504,8 @@ a {
 .item-news {
   margin-top: 16px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .item-news h3 {
@@ -575,8 +552,8 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   top: 4%;
   left: 15%;
@@ -613,11 +590,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer p {

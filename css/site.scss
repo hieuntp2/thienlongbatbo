@@ -70,7 +70,7 @@ li {
   position: relative;
 }
 .page-header {
-  height: 30vh;
+  height: 40vh;
 }
 .download__section {
   display: block;
@@ -181,7 +181,7 @@ a {
   width: 100%;
   width: 100%;
   position: relative;
-  margin-top: 490px;
+  background-color: #232323;
   .bottom {
     position: relative;
     width: 1000px;
@@ -260,30 +260,9 @@ a {
 }
 .btn-gradient {
   background: #f3c5bd;
-  background: -moz-linear-gradient(
-    top,
-    #f3c5bd 0%,
-    #e86c57 50%,
-    #ea2803 51%,
-    #ff6600 75%,
-    #c72200 100%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    #f3c5bd 0%,
-    #e86c57 50%,
-    #ea2803 51%,
-    #ff6600 75%,
-    #c72200 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    #f3c5bd 0%,
-    #e86c57 50%,
-    #ea2803 51%,
-    #ff6600 75%,
-    #c72200 100%
-  );
+  background: -moz-linear-gradient(top, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%);
+  background: -webkit-linear-gradient(top, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%);
+  background: linear-gradient(to bottom, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 );
   color: white !important;
 }
