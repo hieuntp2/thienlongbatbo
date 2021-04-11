@@ -557,6 +557,9 @@ a {
   position: relative;
   top: 4%;
   left: 15%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .download-box .part-2-box {
@@ -627,5 +630,13 @@ a {
   margin-left: 20px;
   margin-top: -2px;
   padding-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 /*# sourceMappingURL=site.css.map */

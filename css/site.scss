@@ -438,6 +438,8 @@ a {
   position: relative;
   top: 4%;
   left: 15%;
+  width: fit-content;
+  
   .part-2-box {
     margin-left: 90px;
   }
@@ -493,5 +495,11 @@ a {
       margin-top: -2px;
       padding-left: 10px;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: fit-content;
   }
 }
