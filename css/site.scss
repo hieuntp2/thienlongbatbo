@@ -177,67 +177,7 @@ a {
   margin: 10px 5px;
   float: left;
 }
-.bottomWrapper {
-  width: 100%;
-  width: 100%;
-  position: relative;
-  background-color: #232323;
-  .bottom {
-    position: relative;
-    width: 1000px;
-    height: 325px;
-    margin: 0 auto;
-    .icon {
-      width: auto;
-      flex: 1;
-      display: inline-block;
-    }
-    table {
-      display: inline-block;
-      position: relative;
-      flex: 10;
-      color: #e8e4cf;
-      top: 23%;
-      left: 450px;
-      td {
-        padding: 4px 80px 4px 0;
-      }
-    }
-  }
-  .footer {
-    width: 100%;
-    height: 150px;
-    background-color: #0f0f10;
-    position: relative;
-    .cyIcon {
-      position: absolute;
-      top: 60px;
-      left: 500px;
-    }
-    .verticalLine {
-      width: 1px;
-      height: 31px;
-      background-color: #828282;
-      position: absolute;
-    }
-    .roadIcon {
-      position: absolute;
-      top: 60px;
-      left: 615px;
-    }
-    .statement {
-      position: absolute;
-      width: 470px;
-      height: 40px;
-      color: #828282;
-      top: 60px;
-      left: 825px;
-      p {
-        text-align: center;
-      }
-    }
-  }
-}
+
 .header-menu {
   top: 700px;
   position: relative;
@@ -272,8 +212,8 @@ a {
   float: left;
   right: 1%;
   background: url(../img/bg-sidebar-right.png) 0 0 no-repeat;
-  width: 226px;
-  height: 603px;
+  width: 255px;
+  height: 690px;
   position: fixed;
   top: 15%;
   right: 0;
@@ -281,6 +221,57 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  background-size: cover;
+
+  .taigame {
+    width: 145px;
+    height: 61px;
+    background-image: url('../img/taigame-right.png');
+    background-size: cover;
+    position: relative;
+    top: 200px;
+    left: -9px;
+  }
+
+  .dangky {
+    width: 115px;
+    height: 47px;
+    background-image: url('../img/dangky-right.png');
+    position: relative;
+    background-size: cover;
+    top: 250px;
+    left: -22px;
+  }
+
+  .facebook {
+    width: 115px;
+    height: 47px;
+    background-image: url('../img/facebook.png');
+    position: relative;
+    background-size: cover; 
+    top: 260px;
+    left: -22px;
+  }
+
+  .group {
+    width: 115px;
+    height: 47px;
+    background-image: url('../img/group-cd.png');
+    position: relative;
+    background-size: cover;
+    top: 270px;
+    left: -22px;
+  }
+
+  .napthe {
+    width: 115px;
+    height: 47px;
+    background-image: url('../img/napthe-right.png');
+    position: relative;
+    background-size: cover;
+    top: 400px;
+    left: -22px;
+  }
 }
 .btn-rightside {
   margin: 10px;
@@ -359,7 +350,7 @@ a {
   margin-top: 50px;
   flex-direction: column;
   align-items: center;
-  top: 494px;
+  top: 912px;
   position: relative;
   .news {
     background-image: url("../img/bg-news.jpg");
@@ -502,4 +493,83 @@ a {
   body {
     width: fit-content;
   }
+}
+
+.bottomWrapper {
+  position: relative;
+  margin-top: 800px;
+  display: flex;
+  justify-content: center;
+  height: 420px;
+  overflow: hidden;
+  padding-left: 300px;
+  padding-right: 300px;
+  .download-bottom {
+    margin-top: -40px;
+    width: 100%;
+    height: 100%;
+
+    .btn-item {
+      position: absolute;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+  .taigame {
+    background-image: url("../img/btm-bt-taigame.png");
+    width: 270px;
+    height: 212px;
+  }
+
+  .dangky {
+    background-image: url("../img/btm-bt-dangky.png");
+    width: 250px;
+    height: 100px;
+  }
+
+  .napthe {
+    background-image: url("../img/btm-bt-napthe.png");
+    width: 250px;
+    height: 100px;
+  }
+
+  .align-item-center {
+    align-items: center;
+  }
+
+  img {
+    height: 580px;
+  }
+
+  .option-icon-wrapper {
+    margin-top: 16px;
+  }
+
+  .icon-facebook {
+    background-image: url("../img/icon-face.png");
+    width: 73px;
+    height: 70px;
+  }
+
+  .icon-group {
+    background-image: url("../img/icon-group.png");
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-youtube {
+    background-image: url("../img/icon-youtube.png");
+    width: 73px;
+    height: 68px;
+  }
+}
+
+.btn-action:hover {
+  background-position: 0 100%;
 }

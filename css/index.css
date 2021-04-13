@@ -3,7 +3,7 @@
 }
 
 .home-container {
-  background-image: url("../img/background-2.jpg");
+  background-image: url("../img/bg.png");
   background-size: auto;
   background-position: top;
   height: 3800px;
@@ -11,14 +11,59 @@
   min-width: 1366px;
 }
 
+.home-container .download-box {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 510px;
+  top: 480px;
+}
+
+.home-container .download-box .napthe {
+  background-image: url("../img/napthe.png");
+  width: 170px;
+  height: 170px;
+}
+
+.home-container .download-box .dangky {
+  background-image: url("../img/dangky.png");
+  width: 170px;
+  height: 170px;
+}
+
+.home-container .download-box .taigame {
+  background-image: url("../img/tai.png");
+  background-size: cover;
+  width: 280px;
+  height: 280px;
+}
+
+.home-container .scroll-btn {
+  background-image: url("../img/btn-scrolldowb.png");
+  width: 150px;
+  height: 75px;
+  position: absolute;
+  top: 780px;
+  left: 910px;
+}
+
 .part3 {
   width: 100%;
   height: 980px;
-  padding-top: 90px;
+  padding-top: 55px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  top: 500px;
+  top: 980px;
 }
 
 .part3 .content {
@@ -384,7 +429,7 @@
   background-size: 100%;
   margin: 0 auto;
   margin-top: 210px;
-  top: 500px;
+  top: 955px;
 }
 
 .partSlide {
@@ -403,13 +448,5 @@
 .partSlide .carousel {
   width: 800px;
   height: 400px;
-}
-
-.bottomWrapper {
-  width: 100%;
-  width: 100%;
-  position: relative;
-  margin-top: 490px;
-  background-color: #0f0f10;
 }
 /*# sourceMappingURL=index.css.map */

@@ -215,82 +215,6 @@ a {
   float: left;
 }
 
-.bottomWrapper {
-  width: 100%;
-  width: 100%;
-  position: relative;
-  background-color: #232323;
-}
-
-.bottomWrapper .bottom {
-  position: relative;
-  width: 1000px;
-  height: 325px;
-  margin: 0 auto;
-}
-
-.bottomWrapper .bottom .icon {
-  width: auto;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: inline-block;
-}
-
-.bottomWrapper .bottom table {
-  display: inline-block;
-  position: relative;
-  -webkit-box-flex: 10;
-      -ms-flex: 10;
-          flex: 10;
-  color: #e8e4cf;
-  top: 23%;
-  left: 450px;
-}
-
-.bottomWrapper .bottom table td {
-  padding: 4px 80px 4px 0;
-}
-
-.bottomWrapper .footer {
-  width: 100%;
-  height: 150px;
-  background-color: #0f0f10;
-  position: relative;
-}
-
-.bottomWrapper .footer .cyIcon {
-  position: absolute;
-  top: 60px;
-  left: 500px;
-}
-
-.bottomWrapper .footer .verticalLine {
-  width: 1px;
-  height: 31px;
-  background-color: #828282;
-  position: absolute;
-}
-
-.bottomWrapper .footer .roadIcon {
-  position: absolute;
-  top: 60px;
-  left: 615px;
-}
-
-.bottomWrapper .footer .statement {
-  position: absolute;
-  width: 470px;
-  height: 40px;
-  color: #828282;
-  top: 60px;
-  left: 825px;
-}
-
-.bottomWrapper .footer .statement p {
-  text-align: center;
-}
-
 .header-menu {
   top: 700px;
   position: relative;
@@ -333,8 +257,8 @@ a {
   float: left;
   right: 1%;
   background: url(../img/bg-sidebar-right.png) 0 0 no-repeat;
-  width: 226px;
-  height: 603px;
+  width: 255px;
+  height: 690px;
   position: fixed;
   top: 15%;
   right: 0;
@@ -349,6 +273,57 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  background-size: cover;
+}
+
+.righ-side-bar .taigame {
+  width: 145px;
+  height: 61px;
+  background-image: url("../img/taigame-right.png");
+  background-size: cover;
+  position: relative;
+  top: 200px;
+  left: -9px;
+}
+
+.righ-side-bar .dangky {
+  width: 115px;
+  height: 47px;
+  background-image: url("../img/dangky-right.png");
+  position: relative;
+  background-size: cover;
+  top: 250px;
+  left: -22px;
+}
+
+.righ-side-bar .facebook {
+  width: 115px;
+  height: 47px;
+  background-image: url("../img/facebook.png");
+  position: relative;
+  background-size: cover;
+  top: 260px;
+  left: -22px;
+}
+
+.righ-side-bar .group {
+  width: 115px;
+  height: 47px;
+  background-image: url("../img/group-cd.png");
+  position: relative;
+  background-size: cover;
+  top: 270px;
+  left: -22px;
+}
+
+.righ-side-bar .napthe {
+  width: 115px;
+  height: 47px;
+  background-image: url("../img/napthe-right.png");
+  position: relative;
+  background-size: cover;
+  top: 400px;
+  left: -22px;
 }
 
 .btn-rightside {
@@ -451,7 +426,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 494px;
+  top: 912px;
   position: relative;
 }
 
@@ -638,5 +613,98 @@ a {
     width: -moz-fit-content;
     width: fit-content;
   }
+}
+
+.bottomWrapper {
+  position: relative;
+  margin-top: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 420px;
+  overflow: hidden;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.bottomWrapper .download-bottom {
+  margin-top: -40px;
+  width: 100%;
+  height: 100%;
+}
+
+.bottomWrapper .download-bottom .btn-item {
+  position: absolute;
+}
+
+.bottomWrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+}
+
+.bottomWrapper .taigame {
+  background-image: url("../img/btm-bt-taigame.png");
+  width: 270px;
+  height: 212px;
+}
+
+.bottomWrapper .dangky {
+  background-image: url("../img/btm-bt-dangky.png");
+  width: 250px;
+  height: 100px;
+}
+
+.bottomWrapper .napthe {
+  background-image: url("../img/btm-bt-napthe.png");
+  width: 250px;
+  height: 100px;
+}
+
+.bottomWrapper .align-item-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottomWrapper img {
+  height: 580px;
+}
+
+.bottomWrapper .option-icon-wrapper {
+  margin-top: 16px;
+}
+
+.bottomWrapper .icon-facebook {
+  background-image: url("../img/icon-face.png");
+  width: 73px;
+  height: 70px;
+}
+
+.bottomWrapper .icon-group {
+  background-image: url("../img/icon-group.png");
+  width: 70px;
+  height: 70px;
+}
+
+.bottomWrapper .icon-youtube {
+  background-image: url("../img/icon-youtube.png");
+  width: 73px;
+  height: 68px;
+}
+
+.btn-action:hover {
+  background-position: 0 100%;
 }
 /*# sourceMappingURL=site.css.map */

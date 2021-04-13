@@ -4,22 +4,18 @@
 <head>
   <title>Phục Hổ Quyền</title>
   <meta charset="utf-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"
-        href="css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <link rel="stylesheet"
-        href="./css/site.css">
-  <link rel="stylesheet"
-        href="./css/index.css">
+  <link rel="stylesheet" href="./css/site.css">
+  <link rel="stylesheet" href="./css/index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-          crossorigin="anonymous"></script>
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-          crossorigin="anonymous"></script>
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <script src="./js/index.js"></script>
@@ -60,53 +56,23 @@
 
   <div class="home-container">
     <!--Download right side-->
-    <div class="download__section">
-      <a class="my-btn-image my-btn-image">
-        <img src="img/download-btn.png">
-      </a>
-    </div>
 
     <div class="download-box">
-      <a class="btn-download my-btn-image">
-        <img src="img/dragon-download.png">
-      </a>
-      <div class="part-2-box">
-        <a class="btn-small my-btn-image">
-          <img src="img/header-dangky-btn.png">
-        </a>
-        <a class="btn-small my-btn-image">
-          <img src="img/header-napthe-btn.png">
-        </a>
-      </div>
-
-      <div class="part-3-box">
-        <a class="btn-wide my-btn-image">
-          <img src="img/header-quanlytaikhoan-btn.png">
-        </a>
-      </div>
+      <div class="btn-action napthe"></div>
+      <div class="btn-action taigame"></div>
+      <div class="btn-action dangky"></div>
     </div>
+
+    <div class="scroll-btn"></div>
+    <div style="height: 5px;"></div>
 
     <div class="righ-side-bar">
       <!-- <button class="btn-rightside btn-dangky">Đăng ký</button> -->
-      <button class="btn-dangky my-btn-image">
-        <img src="img/btn-right-dangky.png" />
-      </button>
-
-      <button class="btn-taikhoan my-btn-image">
-        <img src="img/btn-right-taikhoan.png" />
-      </button>
-
-      <button class="btn-fanpage my-btn-image">
-        <img src="img/btn-right-fanpage.png" />
-      </button>
-
-      <button class="btn-fbgroup my-btn-image">
-        <img src="img/btn-right-fbgroup.png" />
-      </button>
-
-      <button class="btn-napthe my-btn-image">
-        <img src="img/btn-napthe-1.png" />
-      </button>
+      <div class=" btn-action taigame"></div>
+      <div class="dangky btn-action"></div>
+      <div class="facebook btn-action"></div>
+      <div class="group btn-action"></div>
+      <div class="napthe btn-action"></div>
     </div>
     <!--/Download right side-->
     <!-- <div class="part1">
@@ -135,9 +101,7 @@
           <h3>OẲN TÙ TÌ - THỬ TÀI VẬN MAY</h3>
           <p class="desc">Khởi động mùa hè với chuỗi hoạt động hoạt động hấp dẫn. Và thử độ may mắn của mình thông qua
             hoạt động Oẳn Tù Tì với Búa-Kéo-Bao cực kỳ dễ chơi và nhận quà cực kỳ xịn sò nhé!</p>
-          <a href="/tin-tuc/thu-tai-van-may.html"
-             target="_blank"
-             class="viewmore">Xem thêm »</a>
+          <a href="/tin-tuc/thu-tai-van-may.html" target="_blank" class="viewmore">Xem thêm »</a>
         </div>
         <div class="right">
           <div class="item-news d-flex">
@@ -197,22 +161,16 @@
     <div class="part3">
       <div class="part3__top-menu">
         <div class="d-flex justify-content-center">
-          <div class="part3Menu menu menu1 active"
-               onclick="openMenuPart3(event, 'menpai')">Bang Phái</div>
+          <div class="part3Menu menu menu1 active" onclick="openMenuPart3(event, 'menpai')">Bang Phái</div>
         </div>
         <div class="line"></div>
       </div>
       <div class="dsBangPhai leftMenu">
-        <div class="menpai-item menpai1 active"
-             onclick="openMenuPart3BangPhai(event, 'menpai1Tab')"></div>
-        <div class="menpai-item menpai2"
-             onclick="openMenuPart3BangPhai(event, 'menpai2Tab')"></div>
-        <div class="menpai-item menpai3"
-             onclick="openMenuPart3BangPhai(event, 'menpai3Tab')"></div>
-        <div class="menpai-item menpai4"
-             onclick="openMenuPart3BangPhai(event, 'menpai4Tab')"></div>
-        <div class="menpai-item menpai5"
-             onclick="openMenuPart3BangPhai(event, 'menpai5Tab')"></div>
+        <div class="menpai-item menpai1 active" onclick="openMenuPart3BangPhai(event, 'menpai1Tab')"></div>
+        <div class="menpai-item menpai2" onclick="openMenuPart3BangPhai(event, 'menpai2Tab')"></div>
+        <div class="menpai-item menpai3" onclick="openMenuPart3BangPhai(event, 'menpai3Tab')"></div>
+        <div class="menpai-item menpai4" onclick="openMenuPart3BangPhai(event, 'menpai4Tab')"></div>
+        <div class="menpai-item menpai5" onclick="openMenuPart3BangPhai(event, 'menpai5Tab')"></div>
       </div>
       <!-- <ul class="leftMenu">
         <li class="menpai-item menpai1 active"
@@ -226,11 +184,9 @@
         <li class="menpai-item menpai5"
             onclick="openMenuPart3BangPhai(event, 'menpai5Tab')"></li>
       </ul> -->
-      <div id="menpai"
-           class="content menpai">
+      <div id="menpai" class="content menpai">
         <div class="tab">
-          <div id="menpai1Tab"
-               class="menpai1Tab tabContent">
+          <div id="menpai1Tab" class="menpai1Tab tabContent">
             <h3>Nga Mi </h3>
             <div class="intro">
               <span class="subTitle1">Tiểu sử :</span>
@@ -245,13 +201,10 @@
               <p class="tz">Chiến đấu từ xa </p>
             </div>
             <a class="mpMore">Chi tiết</a>
-            <img class="skill"
-                 src="./img/emSkill.png">
-            <img class="person"
-                 src="./img/emPerson.png">
+            <img class="skill" src="./img/emSkill.png">
+            <img class="person" src="./img/emPerson.png">
           </div>
-          <div id="menpai2Tab"
-               class="menpai2Tab tabContent d__none">
+          <div id="menpai2Tab" class="menpai2Tab tabContent d__none">
             <h3>Cái Bang</h3>
             <div class="intro">
               <span class="subTitle1">Tiểu sử :</span>
@@ -270,14 +223,11 @@
               <p class="tz">Cận chiến </p>
             </div>
             <a class="mpMore">Chi tiết</a>
-            <img class="skill"
-                 src="./img/gbSkill.png">
-            <img class="person"
-                 src="./img/gbPerson.png">
+            <img class="skill" src="./img/gbSkill.png">
+            <img class="person" src="./img/gbPerson.png">
 
           </div>
-          <div id="menpai3Tab"
-               class="menpai3Tab tabContent d__none">
+          <div id="menpai3Tab" class="menpai3Tab tabContent d__none">
             <h3>Thiên Sơn</h3>
             <div class="intro">
               <span class="subTitle1">Tiểu sử :</span>
@@ -292,13 +242,10 @@
               <p class="tz">Sát thủ</p>
             </div>
             <a class="mpMore">Chi tiết</a>
-            <img class="skill"
-                 src="./img/tsSkill.png">
-            <img class="person"
-                 src="./img/tsPerson.png">
+            <img class="skill" src="./img/tsSkill.png">
+            <img class="person" src="./img/tsPerson.png">
           </div>
-          <div id="menpai4Tab"
-               class="menpai4Tab tabContent d__none">
+          <div id="menpai4Tab" class="menpai4Tab tabContent d__none">
             <h3>Tiêu Dao</h3>
             <div class="intro">
               <span class="subTitle1">Tiểu sử :</span>
@@ -312,13 +259,10 @@
               <p class="tz">Từ xa</p>
             </div>
             <a class="mpMore">Chi tiết</a>
-            <img class="skill"
-                 src="./img/xySkill.png">
-            <img class="person"
-                 src="./img/xyPerson.png">
+            <img class="skill" src="./img/xySkill.png">
+            <img class="person" src="./img/xyPerson.png">
           </div>
-          <div id="menpai5Tab"
-               class="menpai5Tab tabContent d__none">
+          <div id="menpai5Tab" class="menpai5Tab tabContent d__none">
             <h3>Thiên Long</h3>
             <div class="intro">
               <span class="subTitle1">Tiểu sử :</span>
@@ -332,10 +276,8 @@
               <p class="tz">Từ xa</p>
             </div>
             <a class="mpMore">Chi tiết</a>
-            <img class="skill"
-                 src="./img/tlSkill.png">
-            <img class="person"
-                 src="./img/tlPerson.png">
+            <img class="skill" src="./img/tlSkill.png">
+            <img class="person" src="./img/tlPerson.png">
           </div>
         </div>
       </div>
@@ -345,24 +287,17 @@
       <div class="panel2">
         <div class="menu-wrapper">
           <ul class="newsMenu">
-            <li class="tablinks active"
-                onclick="openMenuPart2(event,'capnhat')">Cập nhật</li>
-            <li class="tablinks"
-                onclick="openMenuPart2(event, 'tintuc')">Tin tức</li>
-            <li class="tablinks"
-                onclick="openMenuPart2(event, 'thongbao')">Thông báo</li>
-            <li class="tablinks"
-                onclick="openMenuPart2(event, 'bantinmoi')">Bản tin mới</li>
+            <li class="tablinks active" onclick="openMenuPart2(event,'capnhat')">Cập nhật</li>
+            <li class="tablinks" onclick="openMenuPart2(event, 'tintuc')">Tin tức</li>
+            <li class="tablinks" onclick="openMenuPart2(event, 'thongbao')">Thông báo</li>
+            <li class="tablinks" onclick="openMenuPart2(event, 'bantinmoi')">Bản tin mới</li>
 
-            <li class="tablinks"
-                onclick="openMenuPart2(event, 'bangxephang')">Bảng xếp hạng</li>
+            <li class="tablinks" onclick="openMenuPart2(event, 'bangxephang')">Bảng xếp hạng</li>
 
-            <li class="tablinks"
-                onclick="openMenuPart2(event, 'giohoatdong')">Giờ Hoạt động</li>
+            <li class="tablinks" onclick="openMenuPart2(event, 'giohoatdong')">Giờ Hoạt động</li>
           </ul>
         </div>
-        <div id="capnhat"
-             class="list-content">
+        <div id="capnhat" class="list-content">
           <ul>
             <li>
               <a href="#">
@@ -390,8 +325,7 @@
             </li>
           </ul>
         </div>
-        <div id="tintuc"
-             class="list-content d__none">
+        <div id="tintuc" class="list-content d__none">
           <ul>
             <li>
               <a href="#">
@@ -419,8 +353,7 @@
             </li>
           </ul>
         </div>
-        <div id="thongbao"
-             class="list-content d__none">
+        <div id="thongbao" class="list-content d__none">
           <ul>
             <li>
               <a href="#">
@@ -448,8 +381,7 @@
             </li>
           </ul>
         </div>
-        <div id="bantinmoi"
-             class="list-content d__none">
+        <div id="bantinmoi" class="list-content d__none">
           <ul>
             <li>
               <a href="#">
@@ -478,8 +410,7 @@
           </ul>
         </div>
 
-        <div id="bangxephang"
-             class="list-content d__none">
+        <div id="bangxephang" class="list-content d__none">
           <ul>
             <li>
               <a href="#">
@@ -508,8 +439,7 @@
           </ul>
         </div>
 
-        <div id="giohoatdong"
-             class="list-content d__none">
+        <div id="giohoatdong" class="list-content d__none">
           <ul>
             <li>
               <a href="#">
@@ -541,35 +471,24 @@
     </div>
 
     <div class="bottomWrapper">
-      <div class="bottom">
-        <img class="icon"
-             src="img/logo.png"
-             alt="Phục Hổ Quyền">
-        <table>
-          <tbody>
-            <tr>
-              <td> Thông tin 1</td>
-              <td>Thông tin 1</td>
-            </tr>
-            <tr>
-              <td>Thông tin 1</td>
-              <td>Android/ios</td>
-            </tr>
-            <tr>
-              <td>Thông tin 1</td>
-              <td>Thông tin 1</td>
-            </tr>
-            <tr>
-              <td>Thông tin 1</td>
-              <td>Thông tin 1</td>
-            </tr>
-            <tr>
-              <td>Thông tin 1</td>
-              <td>Thông tin 1</td>
-            </tr>
-          </tbody>
-        </table>
+      <img class="person" src="./img/tsPerson.png">
+      <div class="d-flex container">
+        <div class="d-flex align-item-center">
+          <div class="taigame btn-action"></div>
+          <div>
+            <div class="dangky btn-action"></div>
+            <div class="napthe btn-action"></div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center option-icon-wrapper">
+          <div class="d-flex">
+            <div class="icon-facebook btn-action"></div>
+            <div class="icon-group btn-action"></div>
+            <div class="icon-youtube btn-action"></div>
+          </div>
+        </div>
       </div>
+      <img class="person" src="./img/tlPerson.png">
     </div>
     <!-- <div class="bottomWrapper">
       <div class="d-flex justify-content-center">
@@ -585,21 +504,16 @@
         <div class="my-flex-1"></div>\
       </div>
     </div> -->
-    <div class="footer">
-      <p>
-        COPYRIGHT 2018 7ROAD COMPANY LIMITED ALL RIGHTS RESERVED
-      </p>
-    </div>
   </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-          crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-          crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-          crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
