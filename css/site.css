@@ -2,8 +2,12 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
 .page-container {
-  background: url("../img/topBg1.jpg") left top no-repeat, url("../img/bottmBg.jpg") left bottom no-repeat #f8f8fa !important;
+  background: url("../img/topBg1.jpg") left top no-repeat, url("../img/bottmBg.jpg") left bottom #f8f8fa !important;
   padding-bottom: 50px;
   height: auto;
 }

@@ -2,9 +2,12 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
 .page-container {
-  background: url("../img/topBg1.jpg") left top no-repeat,
-    url("../img/bottmBg.jpg") left bottom no-repeat rgb(248, 248, 250) !important;
+  background: url("../img/topBg1.jpg") left top no-repeat, url("../img/bottmBg.jpg") left bottom rgb(248, 248, 250) !important;
   padding-bottom: 50px;
   height: auto;
 }
@@ -226,7 +229,7 @@ a {
   .taigame {
     width: 145px;
     height: 61px;
-    background-image: url('../img/taigame-right.png');
+    background-image: url("../img/taigame-right.png");
     background-size: cover;
     position: relative;
     top: 200px;
@@ -236,7 +239,7 @@ a {
   .dangky {
     width: 115px;
     height: 47px;
-    background-image: url('../img/dangky-right.png');
+    background-image: url("../img/dangky-right.png");
     position: relative;
     background-size: cover;
     top: 250px;
@@ -246,9 +249,9 @@ a {
   .facebook {
     width: 115px;
     height: 47px;
-    background-image: url('../img/facebook.png');
+    background-image: url("../img/facebook.png");
     position: relative;
-    background-size: cover; 
+    background-size: cover;
     top: 260px;
     left: -22px;
   }
@@ -256,7 +259,7 @@ a {
   .group {
     width: 115px;
     height: 47px;
-    background-image: url('../img/group-cd.png');
+    background-image: url("../img/group-cd.png");
     position: relative;
     background-size: cover;
     top: 270px;
@@ -266,7 +269,7 @@ a {
   .napthe {
     width: 115px;
     height: 47px;
-    background-image: url('../img/napthe-right.png');
+    background-image: url("../img/napthe-right.png");
     position: relative;
     background-size: cover;
     top: 400px;
@@ -430,7 +433,7 @@ a {
   top: 4%;
   left: 15%;
   width: fit-content;
-  
+
   .part-2-box {
     margin-left: 90px;
   }

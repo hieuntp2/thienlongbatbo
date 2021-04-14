@@ -434,12 +434,12 @@
 }
 
 .carousel-control-prev {
-  left: -70px;
+  left: -70px !important;
 }
 
 .carousel-control-prev-icon {
   background-image: url(../../img/icon-pre.png) !important;
-  height: 60px;
+  height: 45px;
 }
 .carousel-control-next {
   right: -70px;
@@ -447,5 +447,5 @@
 
 .carousel-control-next-icon {
   background-image: url(../../img/icon-next.png) !important;
-  height: 60px;
+  height: 45px;
 }
