@@ -43,8 +43,8 @@
 .home-container .download-box .taigame {
   background-image: url("../img/tai.png");
   background-size: cover;
-  width: 280px;
-  height: 280px;
+  width: 242px;
+  height: 242px;
 }
 
 .home-container .scroll-btn {
@@ -54,6 +54,24 @@
   position: absolute;
   top: 780px;
   left: 910px;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: scroll .4s infinite;
+          animation: scroll .4s infinite;
+}
+
+@-webkit-keyframes scroll {
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@keyframes scroll {
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
 }
 
 .part3 {
@@ -129,7 +147,7 @@
 }
 
 .part3 .menpai .tab .tabContent h3 {
-  font-size: 40px;
+  font-size: 58px;
   color: #f5e5b5;
 }
 
@@ -264,25 +282,31 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 85px;
 }
 
 .part3 .dsBangPhai .menpai-item {
   width: 61px;
   height: 132px;
-  margin-right: 30px;
+  margin-right: 45px;
   cursor: pointer;
 }
 
 .part3Menu {
-  color: white;
-  opacity: 0.8;
+  background: url(https://tlm.wan.com/gw/images/panel2.png) no-repeat;
+  width: 100% !important;
+  height: 48px;
 }
 
 .part3__top-menu {
-  width: 825px;
+  width: 975px;
   height: 100px;
   margin: 0 auto;
-  padding: 46px 0 0 32px;
   margin-top: 50px;
 }
 
@@ -310,24 +334,80 @@
   background: url("../img/line.png") no-repeat;
 }
 
-.menpai1:hover {
-  background: url("../img/emeiCur.png") no-repeat !important;
+.tieudao {
+  background: url("../img/xiaoyao.png") no-repeat;
 }
 
-.menpai2:hover {
-  background: url("../img/gaibangCur.png") no-repeat !important;
-}
-
-.menpai3:hover {
-  background: url("../img/tianshanCur.png") no-repeat !important;
-}
-
-.menpai4:hover {
+.tieudao:hover, .tieudao.active {
   background: url("../img/xiaoyaoCur.png") no-repeat !important;
 }
 
-.menpai5:hover {
+.thienlong {
+  background: url("../img/tianlong.png") no-repeat;
+}
+
+.thienlong:hover, .thienlong.active {
   background: url("../img/tianlongCur.png") no-repeat !important;
+}
+
+.minhgiao {
+  background: url("../img/tianlong.png") no-repeat;
+}
+
+.minhgiao:hover, .minhgiao.active {
+  background: url("../img/tianlongCur.png") no-repeat !important;
+}
+
+.caibang {
+  background: url("../img/gaibang.png") no-repeat;
+}
+
+.caibang:hover, .caibang.active {
+  background: url("../img/gaibangCur.png") no-repeat !important;
+}
+
+.ngamy {
+  background: url("../img/emei.png") no-repeat;
+}
+
+.ngamy:hover, .ngamy.active {
+  background: url("../img/emeiCur.png") no-repeat !important;
+}
+
+.vodang {
+  background: url("../img/vodang.png") no-repeat;
+}
+
+.vodang:hover, .vodang.active {
+  background: url("../img/vodangCur.png") no-repeat !important;
+}
+
+.thienson {
+  background: url("../img/tianshan.png") no-repeat;
+}
+
+.thienson:hover, .thienson.active {
+  background: url("../img/tianshanCur.png") no-repeat !important;
+}
+
+.tinhtuc {
+  background: url("../img/tinhtuc.png") no-repeat;
+}
+
+.tinhtuc:hover, .tinhtuc.active {
+  background: url("../img/tinhtucCur.png") no-repeat !important;
+}
+
+.thieulam {
+  background: url("../img/thieulam.png") no-repeat;
+}
+
+.thieulam:hover, .thieulam.active {
+  background: url("../img/thieulamCur.png") no-repeat !important;
+}
+
+.tz {
+  width: 280px;
 }
 
 .part4 {
@@ -495,5 +575,34 @@
 
 .bottomWrapper {
   margin-top: 800px;
+}
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 100px auto;
+}
+
+.modal-body {
+  position: relative;
+  padding: 0px;
+}
+
+.close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1;
+}
+
+.section-header {
+  background: url(https://tlm.wan.com/gw/images/panel2.png) no-repeat;
+  width: 800px;
+  height: 48px;
+  background-position: top;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=index.css.map */

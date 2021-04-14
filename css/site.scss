@@ -2,10 +2,6 @@ li {
   list-style: none;
 }
 
-img {
-  width: 100%;
-}
-
 .page-container {
   background: url("../img/topBg1.jpg") left top no-repeat, url("../img/bottmBg.jpg") left bottom rgb(248, 248, 250) !important;
   padding-bottom: 50px;
@@ -18,9 +14,10 @@ img {
   background-color: rgba(22, 1, 1, 0.74);
   flex-direction: row;
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
+  width: 100%;
 }
 .header {
   .header-logo {
@@ -107,21 +104,27 @@ img {
       font-size: 15px;
       font-weight: bold;
       color: #902404;
-      margin: 10px 0;
+      margin: 8px 0;
       text-align: center;
       cursor: pointer;
       list-style: none;
       padding: 8px;
+      height: 45px;
       &:hover {
         color: #f5e5b5 !important;
-        background-color: #6a1a21;
+        background: url("../img/newsHover.jpg");
+      }
+
+      &.large {
+        height: 55px;
+        background-size: cover;
       }
     }
   }
 }
 li.active {
   color: #f5e5b5 !important;
-  background-color: #6a1a21;
+  background: url("../img/newsHover.jpg");
 }
 .list-content {
   position: absolute;
@@ -275,6 +278,22 @@ a {
     top: 400px;
     left: -22px;
   }
+
+  .toggle {
+    width: 51px;
+    height: 49px;
+    position: absolute;
+    top: 180px;
+    left: 35px;
+
+    &-open {
+      background: url("../img/right-menu-open.png") no-repeat;
+    }
+
+    &-close {
+      background: url("../img/right-menu-close.png") no-repeat;
+    }
+  }
 }
 .btn-rightside {
   margin: 10px;
@@ -350,7 +369,6 @@ a {
   height: 550px;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   flex-direction: column;
   align-items: center;
   top: 912px;
@@ -575,4 +593,13 @@ a {
 
 .btn-action:hover {
   background-position: 0 100%;
+}
+
+.btn-video-play {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 480px;
+  left: 62%;
+  cursor: pointer;
 }
