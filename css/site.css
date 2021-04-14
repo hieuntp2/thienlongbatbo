@@ -3,7 +3,7 @@ li {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .page-container {
@@ -286,7 +286,7 @@ a {
   background-image: url("../img/taigame-right.png");
   background-size: cover;
   position: relative;
-  top: 200px;
+  top: 210px;
   left: -9px;
 }
 
@@ -296,7 +296,7 @@ a {
   background-image: url("../img/dangky-right.png");
   position: relative;
   background-size: cover;
-  top: 250px;
+  top: 220px;
   left: -22px;
 }
 
@@ -306,7 +306,7 @@ a {
   background-image: url("../img/facebook.png");
   position: relative;
   background-size: cover;
-  top: 260px;
+  top: 225px;
   left: -22px;
 }
 
@@ -316,7 +316,7 @@ a {
   background-image: url("../img/group-cd.png");
   position: relative;
   background-size: cover;
-  top: 270px;
+  top: 230px;
   left: -22px;
 }
 
@@ -326,7 +326,7 @@ a {
   background-image: url("../img/napthe-right.png");
   position: relative;
   background-size: cover;
-  top: 400px;
+  top: 380px;
   left: -22px;
 }
 
@@ -661,13 +661,15 @@ a {
 .bottomWrapper .taigame {
   background-image: url("../img/btm-bt-taigame.png");
   width: 270px;
-  height: 212px;
+  height: 209px;
+  cursor: pointer;
 }
 
 .bottomWrapper .dangky {
   background-image: url("../img/btm-bt-dangky.png");
   width: 250px;
   height: 100px;
+  cursor: pointer;
 }
 
 .bottomWrapper .napthe {
@@ -710,5 +712,20 @@ a {
 
 .btn-action:hover {
   background-position: 0 100%;
+}
+
+.btn-action {
+  cursor: pointer;
+}
+
+.person-bt {
+  position: absolute;
+  z-index: 99;
+  height: 500px;
+  margin-top: -80px;
+}
+
+.align-item-center {
+  margin: auto;
 }
 /*# sourceMappingURL=site.css.map */
