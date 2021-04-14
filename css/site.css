@@ -621,7 +621,7 @@ a {
 
 .bottomWrapper {
   position: relative;
-  margin-top: 800px;
+  background-color: #2f2e2e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

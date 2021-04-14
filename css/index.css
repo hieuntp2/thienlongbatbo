@@ -474,20 +474,26 @@
 }
 
 .carousel-control-prev {
-  left: -70px !important;
+  left: -80px !important;
 }
 
 .carousel-control-prev-icon {
   background-image: url(../../img/icon-pre.png) !important;
-  height: 45px;
+  height: 50px;
+  width: 35px;
 }
 
 .carousel-control-next {
-  right: -70px;
+  right: -80px;
 }
 
 .carousel-control-next-icon {
   background-image: url(../../img/icon-next.png) !important;
-  height: 45px;
+  height: 50px;
+  width: 35px;
+}
+
+.bottomWrapper {
+  margin-top: 800px;
 }
 /*# sourceMappingURL=index.css.map */
