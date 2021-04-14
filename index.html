@@ -4,21 +4,28 @@
 <head>
   <title>Phục Hổ Quyền</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+        href="css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="./css/site.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet"
+        href="./css/site.css">
+  <link rel="stylesheet"
+        href="./css/index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <script src="./js/index.js"></script>
+
+  <!-- <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"> -->
 </head>
 
 <body>
@@ -95,13 +102,76 @@
       <div class="section-header">
         <h2 class="title">Event</h2>
       </div>
-      <div class="news">
+
+      <div id="carouselExampleIndicators"
+           class="carousel slide"
+           data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"></li>
+          <li data-target="#carouselExampleIndicators"
+              data-slide-to="1"></li>
+          <!--  <li data-target="#carouselExampleIndicators"
+              data-slide-to="2"></li> -->
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.ytimg.com/vi/snGzRnl1hxk/maxresdefault.jpg"
+                 alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.ytimg.com/vi/snGzRnl1hxk/maxresdefault.jpg"
+                 alt="Second slide">
+          </div>
+          <!--
+          <div class="carousel-item">
+            <img src="https://i.ytimg.com/vi/snGzRnl1hxk/maxresdefault.jpg"
+                 alt="Third slide">
+          </div> -->
+        </div>
+        <a class="carousel-control-prev"
+           href="#carouselExampleIndicators"
+           role="button"
+           data-slide="prev">
+          <span class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+          <!-- <span class="sr-only">Previous</span> -->
+        </a>
+        <a class="carousel-control-next"
+           href="#carouselExampleIndicators"
+           role="button"
+           data-slide="next">
+          <span class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+          <!-- <span class="sr-only">Next</span> -->
+        </a>
+      </div>
+
+      <!-- <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"> <img class="d-block w-100"
+                   src="https://i.ytimg.com/vi/snGzRnl1hxk/maxresdefault.jpg"
+                   alt="First slide"></li>
+            <li class="splide__slide"> <img class="d-block w-100"
+                   src="https://i.ytimg.com/vi/snGzRnl1hxk/maxresdefault.jpg"
+                   alt="First slide"></li>
+            <li class="splide__slide"> <img class="d-block w-100"
+                   src="https://i.ytimg.com/vi/snGzRnl1hxk/maxresdefault.jpg"
+                   alt="First slide"></li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- <div class="news">
         <div class="left">
           <img src="https://st.volamchinhtong.com//files/uploads/files/fb-thumb/t4_600x315-_2.png" />
           <h3>OẲN TÙ TÌ - THỬ TÀI VẬN MAY</h3>
           <p class="desc">Khởi động mùa hè với chuỗi hoạt động hoạt động hấp dẫn. Và thử độ may mắn của mình thông qua
             hoạt động Oẳn Tù Tì với Búa-Kéo-Bao cực kỳ dễ chơi và nhận quà cực kỳ xịn sò nhé!</p>
-          <a href="/tin-tuc/thu-tai-van-may.html" target="_blank" class="viewmore">Xem thêm »</a>
+          <a href="/tin-tuc/thu-tai-van-may.html"
+             target="_blank"
+             class="viewmore">Xem thêm »</a>
         </div>
         <div class="right">
           <div class="item-news d-flex">
@@ -154,23 +224,29 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
 
     <div class="part3">
       <div class="part3__top-menu">
         <div class="d-flex justify-content-center">
-          <div class="part3Menu menu menu1 active" onclick="openMenuPart3(event, 'menpai')">Bang Phái</div>
+          <div class="part3Menu menu menu1 active"
+               onclick="openMenuPart3(event, 'menpai')">Bang Phái</div>
         </div>
         <div class="line"></div>
       </div>
       <div class="dsBangPhai leftMenu">
-        <div class="menpai-item menpai1 active" onclick="openMenuPart3BangPhai(event, 'menpai1Tab')"></div>
-        <div class="menpai-item menpai2" onclick="openMenuPart3BangPhai(event, 'menpai2Tab')"></div>
-        <div class="menpai-item menpai3" onclick="openMenuPart3BangPhai(event, 'menpai3Tab')"></div>
-        <div class="menpai-item menpai4" onclick="openMenuPart3BangPhai(event, 'menpai4Tab')"></div>
-        <div class="menpai-item menpai5" onclick="openMenuPart3BangPhai(event, 'menpai5Tab')"></div>
+        <div class="menpai-item menpai1 active"
+             onclick="openMenuPart3BangPhai(event, 'menpai1Tab')"></div>
+        <div class="menpai-item menpai2"
+             onclick="openMenuPart3BangPhai(event, 'menpai2Tab')"></div>
+        <div class="menpai-item menpai3"
+             onclick="openMenuPart3BangPhai(event, 'menpai3Tab')"></div>
+        <div class="menpai-item menpai4"
+             onclick="openMenuPart3BangPhai(event, 'menpai4Tab')"></div>
+        <div class="menpai-item menpai5"
+             onclick="openMenuPart3BangPhai(event, 'menpai5Tab')"></div>
       </div>
       <!-- <ul class="leftMenu">
         <li class="menpai-item menpai1 active"
@@ -184,9 +260,11 @@
         <li class="menpai-item menpai5"
             onclick="openMenuPart3BangPhai(event, 'menpai5Tab')"></li>
       </ul> -->
-      <div id="menpai" class="content menpai">
+      <div id="menpai"
+           class="content menpai">
         <div class="tab">
-          <div id="menpai1Tab" class="menpai1Tab tabContent">
+          <div id="menpai1Tab"
+               class="menpai1Tab tabContent">
             <h3>Nga Mi </h3>
             <div class="intro">
               <span class="subTitle1">Tiểu sử :</span>
@@ -201,10 +279,13 @@
               <p class="tz">Chiến đấu từ xa </p>
             </div>
             <a class="mpMore">Chi tiết</a>
-            <img class="skill" src="./img/emSkill.png">
-            <img class="person" src="./img/emPerson.png">
+            <img class="skill"
+                 src="./img/emSkill.png">
+            <img class="person"
+                 src="./img/emPerson.png">
           </div>
-          <div id="menpai2Tab" class="menpai2Tab tabContent d__none">
+          <div id="menpai2Tab"
+               class="menpai2Tab tabContent d__none">
             <h3>Cái Bang</h3>
             <div class="intro">
               <span class="subTitle1">Tiểu sử :</span>
@@ -223,11 +304,14 @@
               <p class="tz">Cận chiến </p>
             </div>
             <a class="mpMore">Chi tiết</a>
-            <img class="skill" src="./img/gbSkill.png">
-            <img class="person" src="./img/gbPerson.png">
+            <img class="skill"
+                 src="./img/gbSkill.png">
+            <img class="person"
+                 src="./img/gbPerson.png">
 
           </div>
-          <div id="menpai3Tab" class="menpai3Tab tabContent d__none">
+          <div id="menpai3Tab"
+               class="menpai3Tab tabContent d__none">
             <h3>Thiên Sơn</h3>
             <div class="intro">
               <span class="subTitle1">Tiểu sử :</span>
@@ -242,10 +326,13 @@
               <p class="tz">Sát thủ</p>
             </div>
             <a class="mpMore">Chi tiết</a>
-            <img class="skill" src="./img/tsSkill.png">
-            <img class="person" src="./img/tsPerson.png">
+            <img class="skill"
+                 src="./img/tsSkill.png">
+            <img class="person"
+                 src="./img/tsPerson.png">
           </div>
-          <div id="menpai4Tab" class="menpai4Tab tabContent d__none">
+          <div id="menpai4Tab"
+               class="menpai4Tab tabContent d__none">
             <h3>Tiêu Dao</h3>
             <div class="intro">
               <span class="subTitle1">Tiểu sử :</span>
@@ -259,10 +346,13 @@
               <p class="tz">Từ xa</p>
             </div>
             <a class="mpMore">Chi tiết</a>
-            <img class="skill" src="./img/xySkill.png">
-            <img class="person" src="./img/xyPerson.png">
+            <img class="skill"
+                 src="./img/xySkill.png">
+            <img class="person"
+                 src="./img/xyPerson.png">
           </div>
-          <div id="menpai5Tab" class="menpai5Tab tabContent d__none">
+          <div id="menpai5Tab"
+               class="menpai5Tab tabContent d__none">
             <h3>Thiên Long</h3>
             <div class="intro">
               <span class="subTitle1">Tiểu sử :</span>
@@ -276,8 +366,10 @@
               <p class="tz">Từ xa</p>
             </div>
             <a class="mpMore">Chi tiết</a>
-            <img class="skill" src="./img/tlSkill.png">
-            <img class="person" src="./img/tlPerson.png">
+            <img class="skill"
+                 src="./img/tlSkill.png">
+            <img class="person"
+                 src="./img/tlPerson.png">
           </div>
         </div>
       </div>
@@ -287,17 +379,24 @@
       <div class="panel2">
         <div class="menu-wrapper">
           <ul class="newsMenu">
-            <li class="tablinks active" onclick="openMenuPart2(event,'capnhat')">Cập nhật</li>
-            <li class="tablinks" onclick="openMenuPart2(event, 'tintuc')">Tin tức</li>
-            <li class="tablinks" onclick="openMenuPart2(event, 'thongbao')">Thông báo</li>
-            <li class="tablinks" onclick="openMenuPart2(event, 'bantinmoi')">Bản tin mới</li>
+            <li class="tablinks active"
+                onclick="openMenuPart2(event,'capnhat')">Cập nhật</li>
+            <li class="tablinks"
+                onclick="openMenuPart2(event, 'tintuc')">Tin tức</li>
+            <li class="tablinks"
+                onclick="openMenuPart2(event, 'thongbao')">Thông báo</li>
+            <li class="tablinks"
+                onclick="openMenuPart2(event, 'bantinmoi')">Bản tin mới</li>
 
-            <li class="tablinks" onclick="openMenuPart2(event, 'bangxephang')">Bảng xếp hạng</li>
+            <li class="tablinks"
+                onclick="openMenuPart2(event, 'bangxephang')">Bảng xếp hạng</li>
 
-            <li class="tablinks" onclick="openMenuPart2(event, 'giohoatdong')">Giờ Hoạt động</li>
+            <li class="tablinks"
+                onclick="openMenuPart2(event, 'giohoatdong')">Giờ Hoạt động</li>
           </ul>
         </div>
-        <div id="capnhat" class="list-content">
+        <div id="capnhat"
+             class="list-content">
           <ul>
             <li>
               <a href="#">
@@ -325,7 +424,8 @@
             </li>
           </ul>
         </div>
-        <div id="tintuc" class="list-content d__none">
+        <div id="tintuc"
+             class="list-content d__none">
           <ul>
             <li>
               <a href="#">
@@ -353,7 +453,8 @@
             </li>
           </ul>
         </div>
-        <div id="thongbao" class="list-content d__none">
+        <div id="thongbao"
+             class="list-content d__none">
           <ul>
             <li>
               <a href="#">
@@ -381,7 +482,8 @@
             </li>
           </ul>
         </div>
-        <div id="bantinmoi" class="list-content d__none">
+        <div id="bantinmoi"
+             class="list-content d__none">
           <ul>
             <li>
               <a href="#">
@@ -404,42 +506,44 @@
             <li>
               <a href="#">
                 <span class="content-item__name">Bản tin mới </span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div id="bangxephang" class="list-content d__none">
-          <ul>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Bảng xếp hàng 1</span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Bảng xếp hàng 1</span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Bảng xếp hàng 1</span>
-                <span class="content-item__date">05/09/2021</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="content-item__name">Bảng xếp hàng 1</span>
                 <span class="content-item__date">05/09/2021</span>
               </a>
             </li>
           </ul>
         </div>
 
-        <div id="giohoatdong" class="list-content d__none">
+        <div id="bangxephang"
+             class="list-content d__none">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="content-item__name">Bảng xếp hàng 1</span>
+                <span class="content-item__date">05/09/2021</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="content-item__name">Bảng xếp hàng 1</span>
+                <span class="content-item__date">05/09/2021</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="content-item__name">Bảng xếp hàng 1</span>
+                <span class="content-item__date">05/09/2021</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="content-item__name">Bảng xếp hàng 1</span>
+                <span class="content-item__date">05/09/2021</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="giohoatdong"
+             class="list-content d__none">
           <ul>
             <li>
               <a href="#">
@@ -471,7 +575,8 @@
     </div>
 
     <div class="bottomWrapper">
-      <img class="person" src="./img/tsPerson.png">
+      <img class="person"
+           src="./img/tsPerson.png">
       <div class="d-flex container">
         <div class="d-flex align-item-center">
           <div class="taigame btn-action"></div>
@@ -488,7 +593,8 @@
           </div>
         </div>
       </div>
-      <img class="person" src="./img/tlPerson.png">
+      <img class="person"
+           src="./img/tlPerson.png">
     </div>
     <!-- <div class="bottomWrapper">
       <div class="d-flex justify-content-center">
@@ -506,14 +612,23 @@
     </div> -->
   </div>
   </div>
-
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script> -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // new Splide('.splide').mount();
+      $('.carousel').carousel();
+    });
+  </script>
 </body>

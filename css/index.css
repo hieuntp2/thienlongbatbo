@@ -449,4 +449,45 @@
   width: 800px;
   height: 400px;
 }
+
+.carousel-item img {
+  height: 400px;
+  width: auto;
+}
+
+.carousel-indicators {
+  bottom: -55px;
+}
+
+.carousel .carousel-indicators li {
+  background-image: url(../../img/slider-btn-dot.png) !important;
+  width: 27px !important;
+  height: 27px !important;
+  margin: 0 5px !important;
+  background-color: transparent;
+}
+
+.carousel .carousel-indicators .active {
+  background-image: url(../../img/slider-btn-dot-active.png) !important;
+  width: 27px !important;
+  height: 27px !important;
+}
+
+.carousel-control-prev {
+  left: -70px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../../img/icon-pre.png) !important;
+  height: 60px;
+}
+
+.carousel-control-next {
+  right: -70px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../../img/icon-next.png) !important;
+  height: 60px;
+}
 /*# sourceMappingURL=index.css.map */
