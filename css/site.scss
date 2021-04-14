@@ -2,8 +2,13 @@ li {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .page-container {
-  background: url("../img/topBg1.jpg") left top no-repeat, url("../img/bottmBg.jpg") left bottom rgb(248, 248, 250) !important;
+  background: url("../img/topBg1.jpg") left top no-repeat,
+    url("../img/bottmBg.jpg") left bottom rgb(248, 248, 250) !important;
   padding-bottom: 50px;
   height: auto;
 }
@@ -206,9 +211,30 @@ a {
 }
 .btn-gradient {
   background: #f3c5bd;
-  background: -moz-linear-gradient(top, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%);
-  background: -webkit-linear-gradient(top, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%);
-  background: linear-gradient(to bottom, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%);
+  background: -moz-linear-gradient(
+    top,
+    #f3c5bd 0%,
+    #e86c57 50%,
+    #ea2803 51%,
+    #ff6600 75%,
+    #c72200 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #f3c5bd 0%,
+    #e86c57 50%,
+    #ea2803 51%,
+    #ff6600 75%,
+    #c72200 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    #f3c5bd 0%,
+    #e86c57 50%,
+    #ea2803 51%,
+    #ff6600 75%,
+    #c72200 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 );
   color: white !important;
 }
@@ -235,7 +261,7 @@ a {
     background-image: url("../img/taigame-right.png");
     background-size: cover;
     position: relative;
-    top: 200px;
+    top: 210px;
     left: -9px;
   }
 
@@ -245,7 +271,7 @@ a {
     background-image: url("../img/dangky-right.png");
     position: relative;
     background-size: cover;
-    top: 250px;
+    top: 220px;
     left: -22px;
   }
 
@@ -255,7 +281,7 @@ a {
     background-image: url("../img/facebook.png");
     position: relative;
     background-size: cover;
-    top: 260px;
+    top: 225px;
     left: -22px;
   }
 
@@ -265,7 +291,7 @@ a {
     background-image: url("../img/group-cd.png");
     position: relative;
     background-size: cover;
-    top: 270px;
+    top: 230px;
     left: -22px;
   }
 
@@ -275,7 +301,7 @@ a {
     background-image: url("../img/napthe-right.png");
     position: relative;
     background-size: cover;
-    top: 400px;
+    top: 380px;
     left: -22px;
   }
 
@@ -476,14 +502,19 @@ a {
   }
 }
 .footer {
-  height: 150px;
+  position: absolute;
+  width: 100%;
   background-color: #000000;
   display: flex;
+  -webkit-box-align: end;
   align-items: flex-end;
+  -webkit-box-pack: center;
   justify-content: center;
-  p {
-    color: white;
-  }
+  height: 50px;
+  margin: auto;
+  // bottom: 0px;
+  color: white;
+  margin-top: 420px;
 }
 
 .newsInner {
@@ -517,10 +548,11 @@ a {
 }
 
 .bottomWrapper {
-  position: relative;
+  text-align: center;
   background-color: #2f2e2e;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  position: absolute;
+  margin: auto;
   height: 420px;
   overflow: hidden;
   padding-left: 300px;
@@ -545,13 +577,15 @@ a {
   .taigame {
     background-image: url("../img/btm-bt-taigame.png");
     width: 270px;
-    height: 212px;
+    height: 209px;
+    cursor: pointer;
   }
 
   .dangky {
     background-image: url("../img/btm-bt-dangky.png");
     width: 250px;
     height: 100px;
+    cursor: pointer;
   }
 
   .napthe {
@@ -602,4 +636,19 @@ a {
   top: 480px;
   left: 62%;
   cursor: pointer;
+}
+
+.btn-action {
+  cursor: pointer;
+}
+
+.person-bt {
+  position: absolute;
+  z-index: 99;
+  height: 500px;
+  margin-top: -80px;
+}
+
+.align-item-center {
+  margin: auto;
 }

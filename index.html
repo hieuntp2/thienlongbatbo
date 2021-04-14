@@ -2,499 +2,597 @@
 <html lang="en">
 
 <head>
-  <title>Phục Hổ Quyền</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phục Hổ Quyền</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
 
-  <script src="./js/index.js"></script>
+    <script src="./js/index.js"></script>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="./css/site.css">
-  <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet"
+          href="./css/site.css">
+    <link rel="stylesheet"
+          href="./css/index.css">
 </head>
 
 <body>
-  <!--Header-->
-  <div class=" header navbar-expand d-flex">
-    <div class="header-logo">
-      <img src="https://tlm.wan.com/gw/images/logo.png" />
-    </div>
-    <div class="header__menu d-flex w-100">
-      <div class="header__menu__item header__menu__item--active text-uppercase">
-        Trang chủ
-      </div>
-      <div class="header__menu__item text-uppercase">
-        Tin tức
-        <div class="header__submenu">
-          <ul class="p-0">
-            <li>Tin Tức</li>
-            <li>Thông báo</li>
-            <li>Hoạt động</li>
-          </ul>
+    <!--Header-->
+    <div class=" header navbar-expand d-flex">
+        <div class="header-logo">
+            <img src="https://tlm.wan.com/gw/images/logo.png" />
         </div>
-      </div>
-      <div class="header__menu__item text-uppercase">
-        Hướng dẫn
-      </div>
-      <div class="header__menu__item text-uppercase">
-        Tài khoản
-      </div>
-      <div class="header__menu__item text-uppercase">
-        Fanpage
-      </div>
-    </div>
-  </div>
-  <!--/Header-->
-  <div>
-    <div class="home-container">
-      <!--Download right side-->
-
-      <div class="download-box">
-        <div class="btn-action napthe"></div>
-        <div class="btn-action taigame"></div>
-        <div class="btn-action dangky"></div>
-      </div>
-
-      <div id="scroll-btn" class="scroll-btn"></div>
-      <div style="height: 5px;"></div>
-
-      <div class="righ-side-bar">
-        <!-- <button class="btn-rightside btn-dangky">Đăng ký</button> -->
-        <div class=" btn-action taigame"></div>
-        <div class="dangky btn-action"></div>
-        <div class="facebook btn-action"></div>
-        <div class="group btn-action"></div>
-        <div class="napthe btn-action"></div>
-        <div class="toggle toggle-close"></div>
-      </div>
-      <div class="btn-video-play video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/UgRPzcp9mhE"
-        data-target="#myModal">
-        <img src="./img/video-play.png">
-      </div>
-
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <!-- 16:9 aspect ratio -->
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-                  allow="autoplay"></iframe>
-              </div>
+        <div class="header__menu d-flex w-100">
+            <div class="header__menu__item header__menu__item--active text-uppercase">
+                Trang chủ
             </div>
-          </div>
+            <div class="header__menu__item text-uppercase">
+                Tin tức
+                <div class="header__submenu">
+                    <ul class="p-0">
+                        <li>Tin Tức</li>
+                        <li>Thông báo</li>
+                        <li>Hoạt động</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__menu__item text-uppercase">
+                Hướng dẫn
+            </div>
+            <div class="header__menu__item text-uppercase">
+                Tài khoản
+            </div>
+            <div class="header__menu__item text-uppercase">
+                Fanpage
+            </div>
         </div>
-      </div>
-      <!--/Download right side-->
-      <!-- <div class="part1">
-      <div class="row">
-        <div class="d-flex header-menu">
-          <div class="offset-md-3"></div>
-          <button type="button"
-                  class="btn btn-primary btn-big col-md-2  btn-gradient">Đăng kí</button>
+    </div>
+    <!--/Header-->
+    <div>
+        <div class="home-container">
+            <!--Download right side-->
 
-          <button type="button"
-                  class="btn btn-primary btn-big col-md-2  btn-gradient">Nạp Thẻ</button>
-          <button type="button"
-                  class="btn btn-primary btn-big col-md-2  btn-gradient">Quản lý tài khoản</button>
-        </div>
-      </div>
-    </div> -->
+            <div class="download-box">
+                <div class="btn-action napthe"></div>
+                <div class="btn-action taigame"></div>
+                <div class="btn-action dangky"></div>
+            </div>
+
+            <div id="scroll-btn"
+                 class="scroll-btn"></div>
+            <div style="height: 5px;"></div>
+
+            <div class="righ-side-bar">
+                <!-- <button class="btn-rightside btn-dangky">Đăng ký</button> -->
+                <div class=" btn-action taigame"></div>
+                <div class="dangky btn-action"></div>
+                <div class="facebook btn-action"></div>
+                <div class="group btn-action"></div>
+                <div class="napthe btn-action"></div>
+                <div class="toggle toggle-close"></div>
+            </div>
+            <div class="btn-video-play video-btn"
+                 data-toggle="modal"
+                 data-src="https://www.youtube.com/embed/UgRPzcp9mhE"
+                 data-target="#myModal">
+                <img src="./img/video-play.png">
+            </div>
+
+            <div class="modal fade"
+                 id="myModal"
+                 tabindex="-1"
+                 role="dialog"
+                 aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog"
+                     role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <button type="button"
+                                    class="close"
+                                    data-dismiss="modal"
+                                    aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <!-- 16:9 aspect ratio -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item"
+                                        src=""
+                                        id="video"
+                                        allowscriptaccess="always"
+                                        allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-      <div id="partNews" class="partNews">
-        <div class="section-header">
-        </div>
+            <div class="partNews"
+                 id="event-div-id">
+                <div class="section-header-with-hr">
+                    <h2 class="title">Event</h2>
+                </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <!--  <li data-target="#carouselExampleIndicators"
+                <div id="carouselExampleIndicators"
+                     class="carousel slide"
+                     data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="0"
+                            class="active"></li>
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="1"></li>
+                        <!--  <li data-target="#carouselExampleIndicators"
               data-slide-to="2"></li> -->
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://i.ytimg.com/vi/snGzRnl1hxk/maxresdefault.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img src="https://i.ytimg.com/vi/snGzRnl1hxk/maxresdefault.jpg" alt="Second slide">
-            </div>
-            <!--
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/slider-1.png"
+                                 alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/slider-1.png"
+                                 alt="Second slide">
+                        </div>
+                        <!--
           <div class="carousel-item">
             <img src="https://i.ytimg.com/vi/snGzRnl1hxk/maxresdefault.jpg"
                  alt="Third slide">
           </div> -->
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </a>
+                    </div>
+                    <a class="carousel-control-prev"
+                       href="#carouselExampleIndicators"
+                       role="button"
+                       data-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                              aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next"
+                       href="#carouselExampleIndicators"
+                       role="button"
+                       data-slide="next">
+                        <span class="carousel-control-next-icon"
+                              aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="part3">
+                <div class="part3__top-menu">
+                    <div class="d-flex justify-content-center">
+                        <div class="part3Menu menu menu1 active"></div>
+                    </div>
+                </div>
+                <div class="dsBangPhai leftMenu">
+                    <div class="menpai-item tieudao active"
+                         onclick="openMenuPart3BangPhai(event, 'menpai1Tab')"></div>
+                    <div class="menpai-item thienlong"
+                         onclick="openMenuPart3BangPhai(event, 'menpai2Tab')"></div>
+                    <div class="menpai-item minhgiao"
+                         onclick="openMenuPart3BangPhai(event, 'menpai3Tab')"></div>
+                    <div class="menpai-item caibang"
+                         onclick="openMenuPart3BangPhai(event, 'menpai4Tab')"></div>
+                    <div class="menpai-item ngamy"
+                         onclick="openMenuPart3BangPhai(event, 'menpai5Tab')"></div>
+                    <div class="menpai-item vodang"
+                         onclick="openMenuPart3BangPhai(event, 'menpai6Tab')"></div>
+                    <div class="menpai-item thieulam"
+                         onclick="openMenuPart3BangPhai(event, 'menpai7Tab')"></div>
+                    <div class="menpai-item thienson"
+                         onclick="openMenuPart3BangPhai(event, 'menpai8Tab')"></div>
+                    <div class="menpai-item tinhtuc"
+                         onclick="openMenuPart3BangPhai(event, 'menpai9Tab')"></div>
+                </div>
+                <div id="menpai"
+                     class="content menpai">
+                    <div class="tab">
+                        <div id="menpai5Tab"
+                             class="menpai5Tab tabContent d__none">
+                            <h3>Nga Mi </h3>
+                            <div class="intro">
+                                <span class="subTitle1">Đặc sắc võ học:</span>
+                                <p class="describe">Xưa nay, Nga My phái trứ danh với thuật trị liệu, biệt tài cải tử
+                                    hoàn sinh, địa vị giang hồ khó ai thay thế được. Võ học Nga My trác tuyệt muôn phần,
+                                    chưởng pháp cương nhu hài hòa song đầy uy lực, kiếm chiêu đẹp tự hoa rơi, ảo diệu
+                                    nhưng chiêu số đôi lúc nhẫn tâm tuyệt diệt</p>
+                                <span class="subTitle2">Chiêu thức:</span>
+                                <p class="tz">Nội công tầm xa, hỗ trợ hồi máu và hồi sinh cho đồng đội</p>
+                            </div>
+                            <img class="person"
+                                 src="./img/emeiPerson.png">
+                        </div>
+                        <div id="menpai4Tab"
+                             class="menpai4Tab tabContent d__none">
+                            <h3>Cái Bang</h3>
+                            <div class="intro">
+                                <span class="subTitle1">Đặc sắc võ học:</span>
+                                <p class="describe">Cái Bang sở trường chiêu thức cận chiến , kình lực kinh thiên động
+                                    địa. 18 thức chưởng pháp uy lực bài sơn đảo hải và bộ bổng pháp biến hóa đã giúp Cái
+                                    Bang khẳng định đại danh trong giang hồ. Nhắc đến Cái Bang là nhắc đến anh hùng
+                                    trượng nghĩa, khí khái vô song.
+                                </p>
+                                <span class="subTitle2">Chiêu thức:</span>
+                                <p class="tz">Độc công cận chiến, nhiều kỹ năng sát thương ngoại công quần thể</p>
+                            </div>
+                            <img class="person"
+                                 src="./img/gaibangPerson.png">
+
+                        </div>
+                        <div id="menpai8Tab"
+                             class="menpai8Tab tabContent d__none">
+                            <h3>Thiên Sơn</h3>
+                            <div class="intro">
+                                <span class="subTitle1">Đặc sắc võ học:</span>
+                                <p class="describe">Thiên Sơn phái dụng bóng đêm làm sở trường để xuất chiêu với lực chí
+                                    mạng cực cao, dễ dàng khiến kẻ địch hồn siêu phách tán. Chưởng pháp Thiên Sơn mười
+                                    phần quái dị, kết hợp với yếu quyết điểm huyệt độc môn tạo nên liên chiêu vô cùng
+                                    nan giải.
+                                </p>
+                                <span class="subTitle2">Chiêu thức:</span>
+                                <p class="tz">Băng công cận chiến, kèm theo các kỹ năng điểm huyệt và ẩn thân cho cá
+                                    nhân lẫn đồng đội</p>
+                            </div>
+                            <img class="person"
+                                 src="./img/tsPerson.png">
+                        </div>
+                        <div id="menpai1Tab"
+                             class="menpai1Tab tabContent">
+                            <h3>Tiêu Dao</h3>
+                            <div class="intro">
+                                <span class="subTitle1">Đặc sắc võ học:</span>
+                                <p class="describe">Đệ tử Tiêu Dao nổi tiếng với sự tự do phóng khoáng, thân pháp xuất
+                                    thần nhập quỷ, tinh thông thuật kỳ môn độn giáp. Trên chiến trận, Tiêu Dao luôn đóng
+                                    vai trò quan trọng vì hiệu quả sát thương cực kỳ cao. Chiêu thức biến ảo sẽ giúp tổ
+                                    đội chiếm thế thượng phong, thay đổi cục diện trong chớp mắt.
+                                </p>
+                                <span class="subTitle2">Chiêu thức:</span>
+                                <p class="tz">Kỹ năng mở rộng sát thương kèm đặt bẫy gây nhiều trạng thái bất lợi cho
+                                    đối thủ</p>
+                            </div>
+                            <img class="person"
+                                 src="./img/xyPerson.png">
+                        </div>
+                        <div id="menpai2Tab"
+                             class="menpai2Tab tabContent d__none">
+                            <h3>Thiên Long</h3>
+                            <div class="intro">
+                                <span class="subTitle1">Đặc sắc võ học:</span>
+                                <p class="describe">Võ học Thiên Long phái thấm nhuần tinh thần Phật học trong từng
+                                    tuyệt kỹ và được hoàng tộc họ Đoàn truyền từ đời này sang đời khác. Đệ tử Thiên Long
+                                    song tu nội công lẫn ngoại công, sở trường dùng kiếm khí, vừa gây sát thương vô hình
+                                    vừa phong tỏa huyệt đạo khiến kẻ địch khó lòng tẩu thoát.
+                                </p>
+                                <span class="subTitle2">Chiêu thức:</span>
+                                <p class="tz">Tấn công tầm xa, phát huy tối đa toàn bộ nội ngoại công và sát thương
+                                    thuộc tính</p>
+                            </div>
+                            <img class="person"
+                                 src="./img/tlPerson.png">
+                        </div>
+                        <div id="menpai3Tab"
+                             class="menpai3Tab tabContent d__none">
+                            <h3>Minh giáo</h3>
+                            <div class="intro">
+                                <span class="subTitle1">Đặc sắc võ học:</span>
+                                <p class="describe">Minh Giáo khởi nguồn từ Ba Tư, võ học khác biệt với võ lâm Trung
+                                    Nguyên, kỳ dị, khó hóa giải. Minh Giáo phải dùng niềm tin thánh hỏa chuyển hóa sức
+                                    mạnh bạo phát, thế đánh tựa lửa đốt cháy đấu trường, người tầm thường không thể nào
+                                    né tránh được.
+                                </p>
+                                <span class="subTitle2">Chiêu thức:</span>
+                                <p class="tz">Hỏa công cận chiến cực mạnh, sát thương ngoại công cực lớn, thời gian hồi
+                                    chiêu nhanh</p>
+                            </div>
+                            <img class="person"
+                                 src="./img/minhgiaoPerson.png">
+                        </div>
+                        <div id="menpai6Tab"
+                             class="menpai6Tab tabContent d__none">
+                            <h3>Võ đang</h3>
+                            <div class="intro">
+                                <span class="subTitle1">Đặc sắc võ học:</span>
+                                <p class="describe">Võ học Võ Đang lấy đạo pháp làm chính, dùng nhu chế cương, tinh vi
+                                    xảo diệu. Nội công Võ Đang phái đã đạt cảnh giới thượng thừa, đứng đầu thiên hạ.
+                                    Thân pháp Võ Đang lại càng lợi hại, uyển chuyển, linh hoạt, chớp mắt đã nắm lĩnh vị
+                                    trí trọng yếu, xoay quanh thế cuộc!
+                                </p>
+                                <span class="subTitle2">Chiêu thức:</span>
+                                <p class="tz">Sát thương nội công tầm xa cực mạnh, kèm theo tuyệt kỹ dùng khí để tiêu
+                                    trừ sát thương.</p>
+                            </div>
+                            <img class="person"
+                                 src="./img/vodangPerson.png">
+                        </div>
+                        <div id="menpai7Tab"
+                             class="menpai7Tab tabContent d__none">
+                            <h3>Thiếu Lâm</h3>
+                            <div class="intro">
+                                <span class="subTitle1">Đặc sắc võ học:</span>
+                                <p class="describe">Trong mấy trăm năm tồn tại kể từ khi lập phái, Thiếu Lâm lưu truyền
+                                    võ học vô thượng cùng tinh thần phật pháp đại từ đại bi, xả thân vì chúng sinh,
+                                    khiến cho quần hùng vô cùng kính phục. Đệ tử Thiếu Lâm tu luyện thuần ngoại công,
+                                    thể hình khôi vĩ, chiêu thức cương mãnh, luôn xông pha đi đầu.
+                                </p>
+                                <span class="subTitle2">Chiêu thức:</span>
+                                <p class="tz">Huyền công cận chiến, tư chất thể lực và ngoại thủ cao</p>
+                            </div>
+                            <img class="person"
+                                 src="./img/thieulamPerson.png">
+                        </div>
+                        <div id="menpai9Tab"
+                             class="menpai9Tab tabContent d__none">
+                            <h3>Tinh Túc</h3>
+                            <div class="intro">
+                                <span class="subTitle1">Đặc sắc võ học:</span>
+                                <p class="describe">Thuật dùng độc của đệ tử Tinh Túc đạt đến cảnh giới xuất thần nhập
+                                    hóa, vì vậy võ lâm Trung Nguyên xem họ là bàng môn tà đạo. Nhưng thực tế Độc Thuật
+                                    không chỉ tạo sát thương cao mà còn giúp đệ tử Tinh Túc khống chế tốt cuộc chiến.
+                                </p>
+                                <span class="subTitle2">Chiêu thức:</span>
+                                <p class="tz">Sát thương gây trúng độc cho đối thủ, nội công tầm xa cực lớn, nhiều kỹ
+                                    năng sát thương diện rộng</p>
+                            </div>
+                            <img class="person"
+                                 src="./img/tinhtucPerson.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="part2">
+                <h2 class="title"></h2>
+                <div class="panel2">
+                    <div class="menu-wrapper">
+                        <ul class="newsMenu">
+                            <li class="tablinks active"
+                                onclick="openMenuPart2(event,'capnhat')">Cập nhật</li>
+                            <li class="tablinks"
+                                onclick="openMenuPart2(event, 'tintuc')">Tin tức</li>
+                            <li class="tablinks"
+                                onclick="openMenuPart2(event, 'thongbao')">Thông báo</li>
+                            <li class="tablinks"
+                                onclick="openMenuPart2(event, 'bantinmoi')">Bản tin mới</li>
+
+                            <li class="tablinks large"
+                                onclick="openMenuPart2(event, 'bangxephang')">Bảng xếp hạng</li>
+
+                            <li class="tablinks large"
+                                onclick="openMenuPart2(event, 'giohoatdong')">Giờ Hoạt động</li>
+                        </ul>
+                    </div>
+                    <div id="capnhat"
+                         class="list-content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tintuc"
+                         class="list-content d__none">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Đại hội võ lâm - Công thành chiến </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Xuất hiện minh chủ võ lâm </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Sự kiện vân tiêu </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Sự kiện chiến trận Đa Bang </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="thongbao"
+                         class="list-content d__none">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="bantinmoi"
+                         class="list-content d__none">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Bản tin mới </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Bản tin mới </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Bản tin mới </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Bản tin mới </span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="bangxephang"
+                         class="list-content d__none">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Bảng xếp hàng 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Bảng xếp hàng 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Bảng xếp hàng 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Bảng xếp hàng 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="giohoatdong"
+                         class="list-content d__none">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Giờ hoạt động 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Giờ hoạt động 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Giờ hoạt động 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="content-item__name">Giờ hoạt động 1</span>
+                                    <span class="content-item__date">05/09/2021</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <img class="person-bt"
+                 src="./img/tsPerson.png">
+            <img class="person-bt"
+                 style="right: 0px;"
+                 src="./img/tlPerson.png">
+            <div class="bottomWrapper">
+
+                <div class="d-flex container">
+                    <div class="d-flex align-item-center">
+                        <div class="taigame btn-action"></div>
+                        <div>
+                            <div class="dangky btn-action"></div>
+                            <div class="napthe btn-action"></div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center option-icon-wrapper">
+                        <div class="d-flex">
+                            <div class="icon-facebook btn-action"></div>
+                            <div class="icon-group btn-action"></div>
+                            <div class="icon-youtube btn-action"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer">
+                <p>
+                    COPYRIGHT 2021 THIÊN LONG BÁT BỘ TRÙNG PHÙNG"
+                </p>
+            </div>
         </div>
-      </div>
-
-
-      <div class="part3">
-        <div class="part3__top-menu">
-          <div class="d-flex justify-content-center">
-            <div class="part3Menu menu menu1 active"></div>
-          </div>
-        </div>
-        <div class="dsBangPhai leftMenu">
-          <div class="menpai-item tieudao active" onclick="openMenuPart3BangPhai(event, 'menpai1Tab')"></div>
-          <div class="menpai-item thienlong" onclick="openMenuPart3BangPhai(event, 'menpai2Tab')"></div>
-          <div class="menpai-item minhgiao" onclick="openMenuPart3BangPhai(event, 'menpai3Tab')"></div>
-          <div class="menpai-item caibang" onclick="openMenuPart3BangPhai(event, 'menpai4Tab')"></div>
-          <div class="menpai-item ngamy" onclick="openMenuPart3BangPhai(event, 'menpai5Tab')"></div>
-          <div class="menpai-item vodang" onclick="openMenuPart3BangPhai(event, 'menpai6Tab')"></div>
-          <div class="menpai-item thieulam" onclick="openMenuPart3BangPhai(event, 'menpai7Tab')"></div>
-          <div class="menpai-item thienson" onclick="openMenuPart3BangPhai(event, 'menpai8Tab')"></div>
-          <div class="menpai-item tinhtuc" onclick="openMenuPart3BangPhai(event, 'menpai9Tab')"></div>
-        </div>
-        <div id="menpai" class="content menpai">
-          <div class="tab">
-            <div id="menpai5Tab" class="menpai5Tab tabContent d__none">
-              <h3>Nga Mi </h3>
-              <div class="intro">
-                <span class="subTitle1">Đặc sắc võ học:</span>
-                <p class="describe">Xưa nay, Nga My phái trứ danh với thuật trị liệu, biệt tài cải tử hoàn sinh, địa vị giang hồ khó ai thay thế được. Võ học Nga My trác tuyệt muôn phần, chưởng pháp cương nhu hài hòa song đầy uy lực, kiếm chiêu đẹp tự hoa rơi, ảo diệu nhưng chiêu số đôi lúc nhẫn tâm tuyệt diệt</p>
-                <span class="subTitle2">Chiêu thức:</span>
-                <p class="tz">Nội công tầm xa, hỗ trợ hồi máu và hồi sinh cho đồng đội</p>
-              </div>
-              <img class="person" src="./img/emeiPerson.png">
-            </div>
-            <div id="menpai4Tab" class="menpai4Tab tabContent d__none">
-              <h3>Cái Bang</h3>
-              <div class="intro">
-                <span class="subTitle1">Đặc sắc võ học:</span>
-                <p class="describe">Cái Bang sở trường chiêu thức cận chiến , kình lực kinh thiên động địa. 18 thức chưởng pháp uy lực bài sơn đảo hải và bộ bổng pháp biến hóa đã giúp Cái Bang khẳng định đại danh trong giang hồ. Nhắc đến Cái Bang là nhắc đến anh hùng trượng nghĩa, khí khái vô song.
-                </p>
-                <span class="subTitle2">Chiêu thức:</span>
-                <p class="tz">Độc công cận chiến, nhiều kỹ năng sát thương ngoại công quần thể</p>
-              </div>
-              <img class="person" src="./img/gaibangPerson.png">
-
-            </div>
-            <div id="menpai8Tab" class="menpai8Tab tabContent d__none">
-              <h3>Thiên Sơn</h3>
-              <div class="intro">
-                <span class="subTitle1">Đặc sắc võ học:</span>
-                <p class="describe">Thiên Sơn phái dụng bóng đêm làm sở trường để xuất chiêu với lực chí mạng cực cao, dễ dàng khiến kẻ địch hồn siêu phách tán. Chưởng pháp Thiên Sơn mười phần quái dị, kết hợp với yếu quyết điểm huyệt độc môn tạo nên liên chiêu vô cùng nan giải.
-                </p>
-                <span class="subTitle2">Chiêu thức:</span>
-                <p class="tz">Băng công cận chiến, kèm theo các kỹ năng điểm huyệt và ẩn thân cho cá nhân lẫn đồng đội</p>
-              </div>
-              <img class="person" src="./img/tsPerson.png">
-            </div>
-            <div id="menpai1Tab" class="menpai1Tab tabContent">
-              <h3>Tiêu Dao</h3>
-              <div class="intro">
-                <span class="subTitle1">Đặc sắc võ học:</span>
-                <p class="describe">Đệ tử Tiêu Dao nổi tiếng với sự tự do phóng khoáng, thân pháp xuất thần nhập quỷ, tinh thông thuật kỳ môn độn giáp. Trên chiến trận, Tiêu Dao luôn đóng vai trò quan trọng vì hiệu quả sát thương cực kỳ cao. Chiêu thức biến ảo sẽ giúp tổ đội chiếm thế thượng phong, thay đổi cục diện trong chớp mắt.
-                </p>
-                <span class="subTitle2">Chiêu thức:</span>
-                <p class="tz">Kỹ năng mở rộng sát thương kèm đặt bẫy gây nhiều trạng thái bất lợi cho đối thủ</p>
-              </div>
-              <img class="person" src="./img/xyPerson.png">
-            </div>
-            <div id="menpai2Tab" class="menpai2Tab tabContent d__none">
-              <h3>Thiên Long</h3>
-              <div class="intro">
-                <span class="subTitle1">Đặc sắc võ học:</span>
-                <p class="describe">Võ học Thiên Long phái thấm nhuần tinh thần Phật học trong từng tuyệt kỹ và được hoàng tộc họ Đoàn truyền từ đời này sang đời khác. Đệ tử Thiên Long song tu nội công lẫn ngoại công, sở trường dùng kiếm khí, vừa gây sát thương vô hình vừa phong tỏa huyệt đạo khiến kẻ địch khó lòng tẩu thoát.
-                </p>
-                <span class="subTitle2">Chiêu thức:</span>
-                <p class="tz">Tấn công tầm xa, phát huy tối đa toàn bộ nội ngoại công và sát thương thuộc tính</p>
-              </div>
-              <img class="person" src="./img/tlPerson.png">
-            </div>
-            <div id="menpai3Tab" class="menpai3Tab tabContent d__none">
-              <h3>Minh giáo</h3>
-              <div class="intro">
-                <span class="subTitle1">Đặc sắc võ học:</span>
-                <p class="describe">Minh Giáo khởi nguồn từ Ba Tư, võ học khác biệt với võ lâm Trung Nguyên, kỳ dị, khó hóa giải. Minh Giáo phải dùng niềm tin thánh hỏa chuyển hóa sức mạnh bạo phát, thế đánh tựa lửa đốt cháy đấu trường, người tầm thường không thể nào né tránh được.
-                </p>
-                <span class="subTitle2">Chiêu thức:</span>
-                <p class="tz">Hỏa công cận chiến cực mạnh, sát thương ngoại công cực lớn, thời gian hồi chiêu nhanh</p>
-              </div>
-              <img class="person" src="./img/minhgiaoPerson.png">
-            </div>
-            <div id="menpai6Tab" class="menpai6Tab tabContent d__none">
-              <h3>Võ đang</h3>
-              <div class="intro">
-                <span class="subTitle1">Đặc sắc võ học:</span>
-                <p class="describe">Võ học Võ Đang lấy đạo pháp làm chính, dùng nhu chế cương, tinh vi xảo diệu. Nội công Võ Đang phái đã đạt cảnh giới thượng thừa, đứng đầu thiên hạ. Thân pháp Võ Đang lại càng lợi hại, uyển chuyển, linh hoạt, chớp mắt đã nắm lĩnh vị trí trọng yếu, xoay quanh thế cuộc!
-                </p>
-                <span class="subTitle2">Chiêu thức:</span>
-                <p class="tz">Sát thương nội công tầm xa cực mạnh, kèm theo tuyệt kỹ dùng khí để tiêu trừ sát thương.</p>
-              </div>
-              <img class="person" src="./img/vodangPerson.png">
-            </div>
-            <div id="menpai7Tab" class="menpai7Tab tabContent d__none">
-              <h3>Thiếu Lâm</h3>
-              <div class="intro">
-                <span class="subTitle1">Đặc sắc võ học:</span>
-                <p class="describe">Trong mấy trăm năm tồn tại kể từ khi lập phái, Thiếu Lâm lưu truyền võ học vô thượng cùng tinh thần phật pháp đại từ đại bi, xả thân vì chúng sinh, khiến cho quần hùng vô cùng kính phục. Đệ tử Thiếu Lâm tu luyện thuần ngoại công, thể hình khôi vĩ, chiêu thức cương mãnh, luôn xông pha đi đầu.
-                </p>
-                <span class="subTitle2">Chiêu thức:</span>
-                <p class="tz">Huyền công cận chiến, tư chất thể lực và ngoại thủ cao</p>
-              </div>
-              <img class="person" src="./img/thieulamPerson.png">
-            </div>
-            <div id="menpai9Tab" class="menpai9Tab tabContent d__none">
-              <h3>Tinh Túc</h3>
-              <div class="intro">
-                <span class="subTitle1">Đặc sắc võ học:</span>
-                <p class="describe">Thuật dùng độc của đệ tử Tinh Túc đạt đến cảnh giới xuất thần nhập hóa, vì vậy võ lâm Trung Nguyên xem họ là bàng môn tà đạo. Nhưng thực tế Độc Thuật không chỉ tạo sát thương cao mà còn giúp đệ tử Tinh Túc khống chế tốt cuộc chiến.
-                </p>
-                <span class="subTitle2">Chiêu thức:</span>
-                <p class="tz">Sát thương gây trúng độc cho đối thủ, nội công tầm xa cực lớn, nhiều kỹ năng sát thương diện rộng</p>
-              </div>
-              <img class="person" src="./img/tinhtucPerson.png">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="part2">
-        <h2 class="title"></h2>
-        <div class="panel2">
-          <div class="menu-wrapper">
-            <ul class="newsMenu">
-              <li class="tablinks active" onclick="openMenuPart2(event,'capnhat')">Cập nhật</li>
-              <li class="tablinks" onclick="openMenuPart2(event, 'tintuc')">Tin tức</li>
-              <li class="tablinks" onclick="openMenuPart2(event, 'thongbao')">Thông báo</li>
-              <li class="tablinks" onclick="openMenuPart2(event, 'bantinmoi')">Bản tin mới</li>
-
-              <li class="tablinks large" onclick="openMenuPart2(event, 'bangxephang')">Bảng xếp hạng</li>
-
-              <li class="tablinks large" onclick="openMenuPart2(event, 'giohoatdong')">Giờ Hoạt động</li>
-            </ul>
-          </div>
-          <div id="capnhat" class="list-content">
-            <ul>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Thông báo cập nhật phiên bản mới </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div id="tintuc" class="list-content d__none">
-            <ul>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Đại hội võ lâm - Công thành chiến </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Xuất hiện minh chủ võ lâm </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Sự kiện vân tiêu </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Sự kiện chiến trận Đa Bang </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div id="thongbao" class="list-content d__none">
-            <ul>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Xử phạt tài khoản gian lận lần 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div id="bantinmoi" class="list-content d__none">
-            <ul>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Bản tin mới </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Bản tin mới </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Bản tin mới </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Bản tin mới </span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div id="bangxephang" class="list-content d__none">
-            <ul>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Bảng xếp hàng 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Bảng xếp hàng 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Bảng xếp hàng 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Bảng xếp hàng 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div id="giohoatdong" class="list-content d__none">
-            <ul>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Giờ hoạt động 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Giờ hoạt động 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Giờ hoạt động 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="content-item__name">Giờ hoạt động 1</span>
-                  <span class="content-item__date">05/09/2021</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="bottomWrapper">
-        <img class="person" src="./img/tsPerson.png">
-        <div class="d-flex container">
-          <div class="d-flex align-item-center">
-            <div class="taigame btn-action"></div>
-            <div>
-              <div class="dangky btn-action"></div>
-              <div class="napthe btn-action"></div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center option-icon-wrapper">
-            <div class="d-flex">
-              <div class="icon-facebook btn-action"></div>
-              <div class="icon-group btn-action"></div>
-              <div class="icon-youtube btn-action"></div>
-            </div>
-          </div>
-        </div>
-        <img class="person" src="./img/tlPerson.png">
-      </div>
-      <div class="footer">
-        <p>
-          COPYRIGHT 2021 THIÊN LONG BÁT BỘ TRÙNG PHÙNG"
-        </p>
-      </div>
     </div>
-  </div>
-  </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // new Splide('.splide').mount();
-      $('.carousel').carousel();
-    });
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // new Splide('.splide').mount();
+            $('.carousel').carousel();
+        });
+    </script>
 </body>

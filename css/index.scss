@@ -44,14 +44,17 @@
     height: 75px;
     position: absolute;
     top: 780px;
-    left: 910px;
+    left: 48%;
     transform: translateY(30px);
-    animation: scroll .4s infinite;
+    animation: scroll 1s infinite;
+    cursor: pointer;
   }
 
   @keyframes scroll {
-    100% {transform: translateY(50px)};
-}
+    100% {
+      transform: translateY(50px);
+    }
+  }
 }
 
 .part3 {
@@ -274,61 +277,70 @@
 
 .tieudao {
   background: url("../img/xiaoyao.png") no-repeat;
-  &:hover,&.active {
+  &:hover,
+  &.active {
     background: url("../img/xiaoyaoCur.png") no-repeat !important;
   }
 }
 
 .thienlong {
   background: url("../img/tianlong.png") no-repeat;
-  &:hover,&.active {
+  &:hover,
+  &.active {
     background: url("../img/tianlongCur.png") no-repeat !important;
   }
 }
 
 .minhgiao {
   background: url("../img/tianlong.png") no-repeat;
-  &:hover,&.active {
+  &:hover,
+  &.active {
     background: url("../img/tianlongCur.png") no-repeat !important;
   }
 }
 .caibang {
   background: url("../img/gaibang.png") no-repeat;
-  &:hover,&.active {
+  &:hover,
+  &.active {
     background: url("../img/gaibangCur.png") no-repeat !important;
   }
 }
 .ngamy {
   background: url("../img/emei.png") no-repeat;
-  &:hover,&.active {
+  &:hover,
+  &.active {
     background: url("../img/emeiCur.png") no-repeat !important;
   }
 }
 
 .vodang {
   background: url("../img/vodang.png") no-repeat;
-  &:hover,&.active {
+  &:hover,
+  &.active {
     background: url("../img/vodangCur.png") no-repeat !important;
   }
 }
 
 .thienson {
   background: url("../img/tianshan.png") no-repeat;
-  &:hover,&.active {
+  &:hover,
+  &.active {
     background: url("../img/tianshanCur.png") no-repeat !important;
   }
 }
 
 .tinhtuc {
   background: url("../img/tinhtuc.png") no-repeat;
-  &:hover,&.active {
+  &:hover,
+  &.active {
     background: url("../img/tinhtucCur.png") no-repeat !important;
   }
 }
 
 .thieulam {
   background: url("../img/thieulam.png") no-repeat;
-  &:hover,&.active {
+  &:hover,
+  &.active {
     background: url("../img/thieulamCur.png") no-repeat !important;
   }
 }
@@ -481,25 +493,48 @@
 }
 
 .carousel-control-prev {
-  left: -80px !important;
+  left: -95px !important;
 }
 
 .carousel-control-prev-icon {
   background-image: url(../../img/icon-pre.png) !important;
-  height: 50px;
-  width: 35px;
+
+  width: 50px;
+  height: 76px;
 }
 .carousel-control-next {
-  right: -80px;
+  right: -95px;
 }
 
 .carousel-control-next-icon {
   background-image: url(../../img/icon-next.png) !important;
-  height: 50px;
-  width: 35px;
+  width: 50px;
+  height: 76px;
 }
-.bottomWrapper {
-  margin-top: 800px;
+
+.section-header-with-hr {
+  background-image: url(../../img/hr-cover.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: initial;
+  text-align: center;
+  margin: auto;
+  background-position: center;
+  padding: 30px;
+  .title {
+    font-size: 45px;
+    color: #d4b453;
+  }
+}
+.person-bt {
+  position: absolute;
+  bottom: 0px;
+  z-index: 99;
+  height: 500px;
+}
+
+.align-item-center {
+  margin: auto;
 }
 
 .modal-dialog {
@@ -528,4 +563,14 @@
   height: 48px;
   background-position: top;
   margin-bottom: 30px;
+}
+
+.bottomWrapper {
+  bottom: 0px;
+  background-color: transparent !important;
+}
+
+.footer {
+  bottom: 0px !important;
+  margin-top: 0px !important;
 }
