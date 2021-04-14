@@ -4,15 +4,3 @@
   padding: 30px 28px;
   width: 100%;
 }
-
-.footer {
-  height: 150px;
-  background-color: #000000;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.footer p {
-  color: white;
-}
