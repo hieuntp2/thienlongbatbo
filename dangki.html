@@ -25,6 +25,10 @@
           integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
           crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Custom Tooltip plugin: JqueryUI -->
+  <link rel="stylesheet"
+        href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -60,14 +64,6 @@
   </div>
   <!--/Header-->
   <div class="page-container">
-    <div class="righ-side-bar">
-      <div class=" btn-action taigame"></div>
-      <div class="dangky btn-action"></div>
-      <div class="facebook btn-action"></div>
-      <div class="group btn-action"></div>
-      <div class="napthe btn-action"></div>
-    </div>
-
     <!--/Download right side-->
     <div class="page-header">
       <span></span>
@@ -91,9 +87,13 @@
                        class="form-control"
                        id="taikhoan"
                        required
+                       name="name"
                        minlength=8
+                       placeholder="text "
                        data-placement="bottom"
-                       title="Tooltip Text">
+                       data-toggle="tooltip"
+                       data-placement="top"
+                       title="Tooltip on top">
               </div>
               <div>
                 <label for="matkhau"
@@ -108,6 +108,7 @@
                 <label for="matkhau2"
                        class="form-label">Xác nhận mật khẩu</label>
                 <input type="password"
+                       name="password"
                        class="form-control"
                        id="matkhau2"
                        required>
@@ -116,18 +117,23 @@
                 <label for="cauhoibimat"
                        class="form-label">Câu hỏi bí mật</label>
                 <select class="form-select"
+                        name="question"
                         id="cauhoibimat"
                         required>
                   <option selected
                           disabled
                           value="">Chọn câu hỏi bí mật</option>
-                  <option>...</option>
+                  <option value="Trường tiểu học của bạn tên gì?">Trường tiểu học của bạn tên gì?</option>
+                  <option value="Bạn sinh ra ở đâu?">Bạn sinh ra ở đâu?</option>
+                  <option value="Tên thú cưng đầu tiên của bạn là gì?">Tên thú cưng đầu tiên của bạn là gì?</option>
+                  <option value="Màu yêu thích của bạn là gì?">Màu yêu thích của bạn là gì?</option>
                 </select>
               </div>
               <div>
                 <label for="cautraloi"
                        class="form-label">Trả lời</label>
-                <input type="password"
+                <input type="text"
+                       name="answer"
                        class="form-control"
                        id="cautraloi"
                        required>
@@ -136,8 +142,19 @@
                 <label for="email"
                        class="form-label">Email</label>
                 <input type="email"
+                       name="email"
                        class="form-control"
                        id="email"
+                       required>
+              </div>
+
+              <div>
+                <label for="tel"
+                       class="form-label">Số điện thoại</label>
+                <input type="tel"
+                       name="tel"
+                       class="form-control"
+                       id="tel"
                        required>
               </div>
               <button class="btn w-50"
@@ -152,14 +169,10 @@
     </div>
   </div>
   </div>
-  
-  <img class="person-bt"
-       src="./img/tsPerson.png">
-  <img class="person-bt"
-       style="right: 0px;"
-       src="./img/tlPerson.png">
-  <div class="bottomWrapper">
 
+  <div class="bottomWrapper">
+    <img class="person"
+         src="./img/tsPerson.png">
     <div class="d-flex container">
       <div class="d-flex align-item-center">
         <div class="taigame btn-action"></div>
@@ -176,8 +189,10 @@
         </div>
       </div>
     </div>
-
+    <img class="person"
+         src="./img/tlPerson.png">
   </div>
+
   <div class="footer">
     <p>
       COPYRIGHT 2021 THIÊN LONG BÁT BỘ TRÙNG PHÙNG"
@@ -195,4 +210,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
           integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
           crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <!-- Custom Tooltip plugin -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- /Custom Tooltip plugin -->
+  <script src="./js/index.js"></script>
+  <script src="./js/dangky.js"></script>
 </body>
