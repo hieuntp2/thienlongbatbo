@@ -89,11 +89,9 @@
                        required
                        name="name"
                        minlength=8
-                       placeholder="text "
                        data-placement="bottom"
                        data-toggle="tooltip"
-                       data-placement="top"
-                       title="Tooltip on top">
+                       title="This is a loong tooltipThis is a loong tooltip This is a loong tooltip This is a loong tooltipThis is a loong tooltip This is a loong tooltip">
               </div>
               <div>
                 <label for="matkhau"
@@ -102,7 +100,9 @@
                        class="form-control"
                        id="matkhau"
                        required
-                       minlength=8>
+                       minlength=8
+                       data-toggle="tooltip"
+                       title="This is a loong tooltipThis is a loong tooltip This is a loong tooltip This is a loong tooltipThis is a loong tooltip This is a loong tooltip">
               </div>
               <div>
                 <label for="matkhau2"
@@ -111,7 +111,8 @@
                        name="password"
                        class="form-control"
                        id="matkhau2"
-                       required>
+                       required
+                       title="This is a loong tooltipThis is a loong tooltip This is a loong tooltip This is a loong tooltipThis is a loong tooltip This is a loong tooltip">
               </div>
               <div>
                 <label for="cauhoibimat"
@@ -170,6 +171,39 @@
   </div>
   </div>
 
+  <!-- alert result modal-->
+  <div class="modal fade"
+       id="resultModal"
+       tabindex="-1"
+       role="dialog"
+       aria-labelledby="exampleModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog"
+         role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"
+              id="resultModalHeader">New message</h5>
+          <button type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="resultMessageP"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/alert modal-->
+
   <div class="bottomWrapper">
     <img class="person"
          src="./img/tsPerson.png">
@@ -201,6 +235,7 @@
   </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
           crossorigin="anonymous"></script>
@@ -211,11 +246,11 @@
           integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
           crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
 
   <!-- Custom Tooltip plugin -->
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  -->
   <!-- /Custom Tooltip plugin -->
   <script src="./js/index.js"></script>
   <script src="./js/dangky.js"></script>
