@@ -7,7 +7,7 @@ img {
 }
 
 .page-container {
-  background: url("../img/topBg1.jpg") left top no-repeat, url("../img/bottmBg.jpg") left bottom #f8f8fa !important;
+  background: url("../img/topBg1.jpg") left top no-repeat, url("../img/bottmBg.jpg") left bottom no-repeat #f8f8fa !important;
   padding-bottom: 50px;
   height: auto;
 }
@@ -262,7 +262,7 @@ a {
 }
 
 .righ-side-bar {
-  display: block;
+  display: none;
   position: fixed;
   float: left;
   right: 1%;
@@ -273,9 +273,6 @@ a {
   top: 15%;
   right: 0;
   z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

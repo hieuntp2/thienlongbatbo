@@ -131,7 +131,12 @@ function onBottomEvent() {
 
 function onMiddleEvent() {
   $(".download__section").show();
-  $(".righ-side-bar").show();
+  $(".righ-side-bar").css({ opacity: 0, display: "flex" }).animate(
+    {
+      opacity: 1,
+    },
+    1000
+  );
 }
 
 $(document).ready(function () {
